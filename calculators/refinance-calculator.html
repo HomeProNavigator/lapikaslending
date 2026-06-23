@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refinance Calculator | Derek Lapikas | Modern Lending Nevada</title>
+    <meta name="description" content="See how much you could save by refinancing your home in Las Vegas or Henderson. Use Derek Lapikas’ free refinance calculator.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-slate-800">
+    <!-- Navbar -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
+            <div class="flex items-center gap-x-3">
+                <img src="../modernlending.jpg" alt="Modern Lending" class="h-10 w-auto">
+                <div>
+                    <div class="font-semibold text-xl">Modern Lending</div>
+                    <div class="text-xs text-sky-600 -mt-1">NEVADA • DEREK LAPIKAS</div>
+                </div>
+            </div>
+            <a href="../index.html#consultation" class="px-6 py-2.5 bg-slate-900 text-white text-sm font-semibold rounded-2xl">Schedule Consultation</a>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <h1 class="text-5xl tracking-tighter font-semibold mb-4">Refinance Savings Calculator</h1>
+        <p class="text-xl text-slate-600 mb-10">See how much you could save by refinancing your current mortgage.</p>
+
+        <div class="bg-white border border-slate-200 rounded-3xl p-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Inputs -->
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">Current Loan Balance</label>
+                        <div class="relative">
+                            <span class="absolute left-4 top-3 text-slate-400">$</span>
+                            <input id="balance" type="number" value="380000" class="w-full pl-8 pr-4 py-3 border border-slate-300 rounded-2xl text-lg">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">Current Interest Rate (%)</label>
+                        <input id="currentRate" type="number" step="0.01" value="7.25" class="w-full px-4 py-3 border border-slate-300 rounded-2xl text-lg">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">New Interest Rate (%)</label>
+                        <input id="newRate" type="number" step="0.01" value="6.25" class="w-full px-4 py-3 border border-slate-300 rounded-2xl text-lg">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">Remaining Loan Term (Years)</label>
+                        <input id="remainingYears" type="number" value="25" class="w-full px-4 py-3 border border-slate-300 rounded-2xl text-lg">
+                    </div>
+                    <button onclick="calculateRefinance()" class="w-full bg-slate-900 text-white py-4 rounded-2xl font-semibold text-lg">Calculate Savings</button>
+                </div>
+
+                <!-- Results -->
+                <div id="results" class="hidden bg-slate-50 border border-slate-200 rounded-3xl p-8">
+                    <div class="text-sm text-slate-500 mb-1">MONTHLY SAVINGS</div>
+                    <div id="monthlySavings" class="text-5xl font-semibold text-emerald-600 tracking-tighter mb-6"></div>
+                    
+                    <div class="text-sm text-slate-500 mb-1">TOTAL INTEREST SAVINGS</div>
+                    <div id="totalSavings" class="text-5xl font-semibold text-emerald-600 tracking-tighter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateRefinance() {
+            const balance = parseFloat(document.getElementById('balance').value);
+            const currentRate = parseFloat(document.getElementById('currentRate').value) / 100 / 12;
+            const newRate = parseFloat(document.getElementById('newRate').value) / 100 / 12;
+            const years = parseFloat(document.getElementById('remainingYears').value);
+            const months = years * 12;
+
+            function monthlyPayment(rate, nper, pv) {
+                return pv * rate * Math.pow(1 + rate, nper) / (Math.pow(1 + rate, nper) - 1);
+            }
+
+            const currentPayment = monthlyPayment(currentRate, months, balance);
+            const newPayment = monthlyPayment(newRate, months, balance);
+
+            const monthlySavings = currentPayment - newPayment;
+            const totalInterestCurrent = (currentPayment * months) - balance;
+            const totalInterestNew = (newPayment * months) - balance;
+            const totalSavings = totalInterestCurrent - totalInterestNew;
+
+            document.getElementById('monthlySavings').innerHTML = '$' + monthlySavings.toFixed(0).toLocaleString();
+            document.getElementById('totalSavings').innerHTML = '$' + totalSavings.toFixed(0).toLocaleString();
+
+            document.getElementById('results').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
