@@ -3,32 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Valley | Derek Lapikas | Modern Lending</title>
-    <meta name="description" content="Derek Lapikas is your local Green Valley mortgage lender in Henderson. Expert help for buyers and homeowners in Green Valley, NV.">
+    <title>Green Valley Mortgage Lender | Derek Lapikas | Modern Lending</title>
+    <meta name="description" content="Expert mortgage guidance in Green Valley, Henderson. Derek Lapikas provides local insights and financing solutions for buyers in Green Valley.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="bg-white text-slate-800">
+
     <!-- Navbar -->
     <nav class="bg-white border-b sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
-            <div class="flex items-center gap-x-3">
+            <a href="../index.html">
                 <div class="flex items-center gap-x-3">
-                    <div class="w-11 h-11 bg-slate-900 rounded-2xl flex items-center justify-center">
-                        <span class="text-white font-bold text-3xl tracking-tighter">ML</span>
-                    </div>
+                    <img src="../modernlending.jpg" alt="Modern Lending Logo" class="h-10 w-auto">
                     <div>
                         <div class="font-semibold text-2xl tracking-tight">Modern Lending</div>
                         <div class="text-[10px] text-sky-600 font-medium -mt-1">NEVADA • DEREK LAPIKAS</div>
                     </div>
                 </div>
-            </div>
+            </a>
+
             <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
                 <a href="../index.html#meet-derek" class="hover:text-sky-600">Meet Derek</a>
                 <a href="../index.html#programs" class="hover:text-sky-600">Loan Programs</a>
+                <a href="../index.html#locations" class="hover:text-sky-600">Locations</a>
+                <a href="../index.html#tools" class="hover:text-sky-600">Tools</a>
             </div>
-            <div>
-                <a href="../index.html#consultation" class="px-6 py-2.5 bg-slate-900 text-white text-sm font-semibold rounded-2xl hover:bg-black transition-all">Schedule Consultation</a>
+
+            <div class="hidden md:flex items-center gap-x-4">
+                <a href="tel:7024601077" class="text-sm font-medium hover:text-sky-600">(702) 460-1077</a>
+                <button onclick="openModal()" class="px-6 py-2.5 bg-slate-900 hover:bg-black text-white text-sm font-semibold rounded-2xl transition-all">
+                    Schedule Consultation
+                </button>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-6 py-6 space-y-4 text-sm font-medium">
+                <a href="../index.html#meet-derek" class="block py-2 hover:text-sky-600">Meet Derek</a>
+                <a href="../index.html#programs" class="block py-2 hover:text-sky-600">Loan Programs</a>
+                <a href="../index.html#locations" class="block py-2 hover:text-sky-600">Locations</a>
+                <a href="../index.html#tools" class="block py-2 hover:text-sky-600">Tools</a>
+                <div class="pt-4 border-t">
+                    <a href="tel:7024601077" class="block py-2 text-sky-600 font-medium">(702) 460-1077</a>
+                    <button onclick="openModal()" class="mt-3 w-full px-6 py-3 bg-slate-900 text-white font-semibold rounded-2xl">
+                        Schedule Consultation
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -36,82 +62,229 @@
     <!-- Hero -->
     <header class="bg-slate-950 text-white py-16">
         <div class="max-w-5xl mx-auto px-6">
-            <h1 class="text-6xl tracking-tighter font-semibold">Green Valley Mortgage Lender</h1>
-            <p class="mt-4 text-2xl text-white/90">Trusted mortgage guidance for homebuyers and homeowners in Green Valley, Henderson from Derek Lapikas.</p>
-            <div class="mt-8">
-                <a href="../index.html#consultation" class="inline-flex px-8 py-4 bg-white text-slate-900 font-semibold rounded-2xl">Speak with Derek</a>
-            </div>
+            <h1 class="text-6xl tracking-tighter font-semibold">Green Valley, Henderson</h1>
+            <p class="mt-4 text-2xl text-white/90">One of Henderson’s most established and well-known neighborhoods, offering a mature suburban feel with convenient access to shopping, parks, and the Las Vegas Strip.</p>
         </div>
     </header>
 
-    <!-- Local Market -->
+    <!-- Overview -->
     <section class="max-w-5xl mx-auto px-6 py-16">
-        <h2 class="text-4xl tracking-tight font-semibold mb-8">Green Valley Housing Market</h2>
+        <h2 class="text-4xl tracking-tight font-semibold mb-6">Overview of Green Valley</h2>
         <div class="prose prose-slate max-w-none text-lg">
-            <p>Green Valley is one of Henderson’s most established and desirable neighborhoods, offering a mix of single-family homes, townhomes, and condos. It remains popular with first-time buyers, families, and those looking for convenient access to amenities and employment centers.</p>
-            <p class="mt-4">Derek Lapikas has helped many clients purchase and refinance homes throughout Green Valley and understands the local market dynamics well.</p>
+            <p>Green Valley is one of the most established and recognizable neighborhoods in Henderson. It has long been popular with both long-time residents and newcomers due to its mature, suburban character, tree-lined streets, and convenient location.</p>
+            
+            <p class="mt-4">The area offers a good mix of housing styles, from single-family homes built in the 1990s and early 2000s to newer construction in some sections. Green Valley provides a more traditional suburban feel compared to some of the newer master-planned communities in Henderson.</p>
+            
+            <p class="mt-4">Its central location within Henderson gives residents relatively easy access to major shopping centers (including the Galleria at Sunset), dining options, and parks, while still being within approximately 15 minutes of the Las Vegas Strip.</p>
         </div>
     </section>
 
-    <!-- Financing in Green Valley -->
+    <!-- Market Snapshot -->
+    <section class="max-w-5xl mx-auto px-6 py-12 border-y">
+        <h2 class="text-3xl tracking-tight font-semibold mb-8">Green Valley Market Snapshot – June 2026</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Median Sale Price</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">$465,000</div>
+                <div class="text-sm text-red-600 mt-1">−1.8% year-over-year</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Avg. Days on Market</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">~48–58 days</div>
+                <div class="text-sm text-emerald-600 mt-1">Relatively stable</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Housing Inventory</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">Balanced</div>
+                <div class="text-sm text-emerald-600 mt-1">Good selection for buyers</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Clark County Population (2026 Est.)</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">~2.5 million</div>
+                <div class="text-sm text-emerald-600 mt-1">+1.7% annual growth</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Major Employment Sectors</div>
+                <div class="text-lg font-medium mt-1">Healthcare, retail, professional services, tourism</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Market Note</div>
+                <div class="text-lg font-medium mt-1">Green Valley remains popular with buyers seeking established neighborhoods with convenient access to amenities.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neighborhoods & Lifestyle -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-4xl tracking-tight font-semibold mb-8">Neighborhoods &amp; Lifestyle in Green Valley</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 text-lg">
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Established Feel</h3>
+                <p class="text-slate-600">Green Valley is known for its mature, suburban character. Many homes were built in the 1990s and early 2000s, giving the area a more established look and feel compared to newer master-planned communities.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Parks &amp; Recreation</h3>
+                <p class="text-slate-600">The neighborhood features several parks and green spaces. Residents also have convenient access to the broader Henderson park system and recreational facilities.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Shopping &amp; Dining</h3>
+                <p class="text-slate-600">Green Valley offers easy access to the Galleria at Sunset shopping center and a variety of dining options, making daily errands and dining out convenient.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Community Atmosphere</h3>
+                <p class="text-slate-600">The area maintains a strong suburban community feel with a mix of long-time residents and newer homeowners. Many neighborhoods have active homeowners associations that help maintain community standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Estate Market -->
     <section class="bg-slate-50 py-16">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-4xl tracking-tight font-semibold mb-8">Financing Options in Green Valley</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="font-semibold text-xl mb-4">Popular Choices</h3>
-                    <ul class="space-y-2 text-lg">
-                        <li>FHA and Conventional loans</li>
-                        <li>First-time buyer programs</li>
-                        <li>Refinance options for existing homeowners</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-xl mb-4">Local Expertise</h3>
-                    <p class="text-slate-600">Derek works with buyers at all stages in Green Valley and helps them navigate the specific financing needs of this mature, well-established Henderson community.</p>
-                </div>
+            <h2 class="text-4xl tracking-tight font-semibold mb-6">Real Estate Market in Green Valley</h2>
+            <div class="prose prose-slate max-w-none text-lg">
+                <p>Green Valley offers a mix of housing styles and price points, making it appealing to a broad range of buyers. The area includes both single-family homes and some townhome/condo options, giving buyers flexibility depending on their needs and budget.</p>
+                
+                <p class="mt-4">Because it is an established neighborhood, buyers often find homes with more mature landscaping and larger lots compared to some newer developments. The market in Green Valley tends to move at a steady pace, with good availability for buyers who are looking for specific features or locations within the neighborhood.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schools & Proximity -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-4xl tracking-tight font-semibold mb-8">Schools &amp; Accessibility</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 text-lg">
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Schools</h3>
+                <p class="text-slate-600">Green Valley is served by the Clark County School District. Several well-regarded schools are located in or near the neighborhood, which is one of the reasons many families have historically chosen the area.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Proximity</h3>
+                <p class="text-slate-600">Green Valley’s location in central Henderson provides relatively easy access to the Las Vegas Strip (approximately 15 minutes), major highways, and employment centers throughout the valley.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financing -->
+    <section class="bg-slate-50 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl tracking-tight font-semibold mb-6">Financing Considerations in Green Valley</h2>
+            <div class="prose prose-slate max-w-none text-lg">
+                <p>Derek Lapikas works with many buyers purchasing homes in Green Valley. The neighborhood’s established nature means buyers often encounter a mix of property ages and styles, which can influence financing considerations such as appraisal values and renovation needs.</p>
+                
+                <p class="mt-4">Whether buying a move-in ready home or one that may need updates, Derek helps clients understand their options and structure financing that fits their specific situation.</p>
             </div>
         </div>
     </section>
 
     <!-- FAQ -->
     <section class="max-w-5xl mx-auto px-6 py-16">
-        <h2 class="text-4xl tracking-tight font-semibold mb-8">Frequently Asked Questions</h2>
+        <h2 class="text-4xl tracking-tight font-semibold mb-8">Frequently Asked Questions About Green Valley</h2>
+        
         <div class="space-y-4">
             <div class="border border-slate-200 rounded-2xl p-6">
-                <div class="font-semibold">Is Green Valley a good area for first-time buyers?</div>
-                <div class="mt-2 text-slate-600">Yes. It offers a good mix of housing options and convenient location within Henderson.</div>
+                <div class="font-semibold text-lg">How far is Green Valley from the Las Vegas Strip?</div>
+                <div class="mt-2 text-slate-600">Green Valley is approximately 15 minutes from the Las Vegas Strip, making it one of the closer suburban areas to the main entertainment corridor.</div>
             </div>
+            
             <div class="border border-slate-200 rounded-2xl p-6">
-                <div class="font-semibold">What loan programs work well in Green Valley?</div>
-                <div class="mt-2 text-slate-600">FHA and conventional loans are very common. Derek helps clients choose the best fit for their situation.</div>
+                <div class="font-semibold text-lg">What is Green Valley known for?</div>
+                <div class="mt-2 text-slate-600">Green Valley is known for its established, suburban feel, convenient location, and access to shopping (including the Galleria at Sunset) and parks.</div>
+            </div>
+            
+            <div class="border border-slate-200 rounded-2xl p-6">
+                <div class="font-semibold text-lg">Is Green Valley a good area for buyers who want an established neighborhood?</div>
+                <div class="mt-2 text-slate-600">Yes. Many buyers choose Green Valley specifically because it is a mature neighborhood with tree-lined streets and a more traditional suburban character.</div>
             </div>
         </div>
     </section>
 
-    <!-- Internal Links & CTA -->
-    <section class="max-w-5xl mx-auto px-6 py-12 border-t">
-        <h3 class="font-semibold mb-4">Explore More</h3>
-        <div class="flex flex-wrap gap-x-6 text-sky-600">
-            <a href="../loan-programs/fha-loans-nevada.html" class="hover:underline">FHA Loans Nevada</a>
-            <a href="henderson-mortgage-lender.html" class="hover:underline">Henderson Mortgage Lender</a>
-        </div>
-    </section>
-
+    <!-- CTA -->
     <section class="bg-slate-950 text-white py-16">
         <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-4xl tracking-tight font-semibold mb-4">Ready to buy or refinance in Green Valley?</h2>
-            <a href="../index.html#consultation" class="inline-flex px-9 py-4 bg-white text-slate-900 font-semibold rounded-2xl">Schedule Consultation with Derek</a>
+            <h2 class="text-4xl tracking-tight font-semibold mb-4">Considering a home in Green Valley?</h2>
+            <p class="text-xl text-white/80 mb-8">Derek Lapikas can help you understand your financing options in the Green Valley area.</p>
+            <button onclick="openModal()" class="inline-flex px-9 py-4 bg-white text-slate-900 font-semibold rounded-2xl text-lg">Schedule a Consultation</button>
         </div>
     </section>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Derek Lapikas - Green Valley Mortgage Lender",
-      "address": {"@type": "PostalAddress", "addressLocality": "Henderson", "addressRegion": "NV"}
-    }
+    <!-- Consultation Modal -->
+    <div id="consultation-modal" onclick="if (event.target.id === 'consultation-modal') closeModal()" class="hidden fixed inset-0 bg-black bg-opacity-50 z-[999] flex items-center justify-center p-4">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white rounded-3xl max-w-lg w-full p-8 relative">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-times text-2xl"></i>
+            </button>
+
+            <h3 class="text-3xl font-semibold tracking-tight mb-2">Schedule a Consultation</h3>
+            <p class="text-slate-600 mb-6">Fill out the form below and Derek will personally follow up within 24 hours.</p>
+
+            <form name="consultation" method="POST" data-netlify="true" class="space-y-5">
+                <input type="hidden" name="form-name" value="consultation">
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">Full Name</label>
+                    <input type="text" name="name" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Phone Number</label>
+                        <input type="tel" name="phone" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Email Address</label>
+                        <input type="email" name="email" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">What are you looking for?</label>
+                    <select name="interest" class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                        <option>Purchasing a home in Nevada</option>
+                        <option>Refinancing my current home</option>
+                        <option>VA Loan options</option>
+                        <option>Just exploring my options</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full bg-slate-900 hover:bg-black text-white font-semibold py-4 rounded-2xl text-lg transition-all mt-2">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            const modal = document.getElementById('consultation-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('consultation-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = menuBtn.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+        }
     </script>
 </body>
 </html>
