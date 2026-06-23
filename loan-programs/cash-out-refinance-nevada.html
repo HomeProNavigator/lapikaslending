@@ -142,6 +142,33 @@
         "name": "Derek Lapikas - Modern Lending Nevada"
       }
     }
+
+            </footer>
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MortgageBroker",
+      "name": "Derek Lapikas - Modern Lending Nevada",
+      "url": "https://lapikaslending.netlify.app",
+      "telephone": "(702) 460-1077",
+      "areaServed": ["Las Vegas", "Henderson", "Summerlin", "North Las Vegas"],
+      "description": "Local Nevada mortgage expert helping families buy homes and refinance with personalized guidance."
+    }
+    </script>
+
+    <!-- Navbar Injection Script -->
+    <script>
+        fetch('/includes/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+    </script>
+
+</body>
+</html>
     </script>
 </body>
 </html>
