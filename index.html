@@ -173,5 +173,76 @@
             });
     </script>
 
+    <!-- ====================== CONSULTATION MODAL ====================== -->
+<div id="consultation-modal" onclick="if (event.target.id === 'consultation-modal') closeModal()" 
+     class="hidden fixed inset-0 bg-black bg-opacity-50 z-[999] flex items-center justify-center p-4">
+    
+    <div onclick="event.stopImmediatePropagation()" 
+         class="bg-white rounded-3xl max-w-lg w-full p-8 relative">
+        
+        <!-- Close Button -->
+        <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600">
+            <i class="fa-solid fa-times text-2xl"></i>
+        </button>
+
+        <h3 class="text-3xl font-semibold tracking-tight mb-2">Schedule a Consultation</h3>
+        <p class="text-slate-600 mb-6">Fill out the form below and Derek will personally follow up within 24 hours.</p>
+
+        <!-- Netlify Form -->
+        <form name="consultation" method="POST" data-netlify="true" class="space-y-5">
+            <input type="hidden" name="form-name" value="consultation">
+
+            <div>
+                <label class="block text-sm font-medium text-slate-600 mb-1">Full Name</label>
+                <input type="text" name="name" required 
+                       class="w-full border border-slate-300 rounded-2xl px-5 py-3 focus:outline-none focus:border-sky-500">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">Phone Number</label>
+                    <input type="tel" name="phone" required 
+                           class="w-full border border-slate-300 rounded-2xl px-5 py-3 focus:outline-none focus:border-sky-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">Email Address</label>
+                    <input type="email" name="email" required 
+                           class="w-full border border-slate-300 rounded-2xl px-5 py-3 focus:outline-none focus:border-sky-500">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-slate-600 mb-1">What are you looking for?</label>
+                <select name="interest" class="w-full border border-slate-300 rounded-2xl px-5 py-3 focus:outline-none focus:border-sky-500">
+                    <option>Purchasing a home in Nevada</option>
+                    <option>Refinancing my current home</option>
+                    <option>VA Loan options</option>
+                    <option>Just exploring my options</option>
+                </select>
+            </div>
+
+            <button type="submit" 
+                    class="w-full bg-slate-900 hover:bg-black text-white font-semibold py-4 rounded-2xl text-lg transition-all mt-2">
+                Submit Request
+            </button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        const modal = document.getElementById('consultation-modal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('consultation-modal');
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+    }
+</script>
+<!-- ====================== END MODAL ====================== -->
+    
 </body>
 </html>
