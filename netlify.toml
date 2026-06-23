@@ -1,0 +1,22 @@
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Netlify Forms (already set up in index.html)
+[forms]
+  # Optional: You can add form notifications here later
+
+# Optional redirects (example)
+[[redirects]]
+  from = "/apply"
+  to = "/#quote"
+  status = 301
