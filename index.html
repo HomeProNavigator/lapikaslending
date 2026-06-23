@@ -10,30 +10,7 @@
 </head>
 <body class="bg-white text-slate-800">
 
-    <!-- Navbar -->
-    <nav class="bg-white border-b sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
-            <div class="flex items-center gap-x-3">
-                <div class="flex items-center gap-x-3">
-                    <img src="modernlending.jpg" alt="Modern Lending Nevada Logo" class="h-11 w-auto rounded-2xl">
-                    <div>
-                        <div class="font-semibold text-2xl tracking-tight">Modern Lending</div>
-                        <div class="text-[10px] text-sky-600 font-medium -mt-1">NEVADA • DEREK LAPIKAS</div>
-                    </div>
-                </div>
-            </div>
-            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
-                <a href="#meet-derek" class="hover:text-sky-600">Meet Derek</a>
-                <a href="#programs" class="hover:text-sky-600">Loan Programs</a>
-                <a href="#locations" class="hover:text-sky-600">Locations</a>
-                <a href="#tools" class="hover:text-sky-600">Tools</a>
-            </div>
-            <div class="flex items-center gap-x-3">
-                <a href="tel:7024601077" class="hidden sm:block text-sm font-medium px-4 py-2 hover:bg-slate-100 rounded-xl">(702) 460-1077</a>
-                <a href="#consultation" class="px-6 py-2.5 bg-slate-900 text-white text-sm font-semibold rounded-2xl hover:bg-black transition-all">Schedule Consultation</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar is loaded dynamically via script at the bottom -->
 
     <!-- Hero -->
     <header class="bg-slate-950 text-white pt-16 pb-20">
@@ -73,7 +50,7 @@
         </div>
     </div>
 
-    <!-- Meet Derek Lapikas -->
+    <!-- Meet Derek -->
     <section id="meet-derek" class="max-w-5xl mx-auto px-6 py-20">
         <div class="grid md:grid-cols-12 gap-x-12 items-start">
             <div class="md:col-span-5 mb-10 md:mb-0">
@@ -97,7 +74,7 @@
                     
                     <p class="mt-4">As a Navy veteran himself, Derek has a special connection with fellow veterans and takes pride in guiding them through the VA loan process. With 6 years of mortgage experience, he has built a reputation for saving loans that others couldn’t close by combining deep product knowledge with relentless problem-solving and personalized service.</p>
                     
-                    <p class="mt-4">Derek is known for his transparent, educational approach. He believes clients deserve to fully understand their options, not just be sold a loan. Whether you’re a first-time buyer in Henderson, a veteran using your VA benefit in Las Vegas, or a homeowner looking to refinance in Summerlin, Derek provides clear guidance backed by Modern Lending’s competitive rates and fast processing.</p>
+                    <p class="mt-4">Derek is known for his transparent, educational approach. He believes clients deserve to fully understand their options. Whether you’re a first-time buyer in Henderson, a veteran using your VA benefit in Las Vegas, or a homeowner looking to refinance in Summerlin, Derek provides clear guidance backed by Modern Lending’s competitive rates and fast processing.</p>
                     
                     <p class="mt-4">Outside of work, Derek enjoys golfing and cheering on his Chicago Bears.</p>
                 </div>
@@ -147,13 +124,13 @@
             <h2 class="text-5xl tracking-tighter font-semibold">Expert Mortgage Guidance Across Southern Nevada</h2>
         </div>
         <div class="grid md:grid-cols-3 gap-6">
-            <a href="locations/henderson-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Henderson</a>
-            <a href="locations/summerlin-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Summerlin</a>
-            <a href="locations/las-vegas-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Las Vegas</a>
-            <a href="locations/green-valley-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Green Valley</a>
-            <a href="locations/inspirada-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Inspirada</a>
-            <a href="locations/anthem-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Anthem</a>
-            <a href="locations/north-las-vegas-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">North Las Vegas</a>
+            <a href="locations/henderson-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Henderson Mortgage Lender</a>
+            <a href="locations/summerlin-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Summerlin Mortgage Lender</a>
+            <a href="locations/las-vegas-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Las Vegas Mortgage Lender</a>
+            <a href="locations/green-valley-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Green Valley Mortgage Lender</a>
+            <a href="locations/inspirada-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Inspirada Mortgage Lender</a>
+            <a href="locations/anthem-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">Anthem Mortgage Lender</a>
+            <a href="locations/north-las-vegas-mortgage-lender.html" class="block p-8 bg-white rounded-3xl border hover:border-sky-200">North Las Vegas Mortgage Lender</a>
         </div>
     </section>
 
@@ -187,19 +164,14 @@
         </div>
     </footer>
 
-    <!-- Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MortgageBroker",
-      "name": "Derek Lapikas - Modern Lending Nevada",
-      "url": "https://lapikaslending.netlify.app",
-      "telephone": "(702) 460-1077",
-      "areaServed": ["Las Vegas", "Henderson", "Summerlin", "North Las Vegas"],
-      "description": "Local Nevada mortgage expert helping families buy homes and refinance with personalized guidance."
-    }
-  
-</script>
+    <!-- Navbar Injection Script (Loads the single navbar) -->
+    <script>
+        fetch('/includes/navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+    </script>
 
 </body>
 </html>
