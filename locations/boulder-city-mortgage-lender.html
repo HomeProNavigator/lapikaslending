@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boulder City Mortgage Lender | Derek Lapikas | Modern Lending</title>
+    <meta name="description" content="Expert mortgage guidance in Boulder City, Nevada. Derek Lapikas provides local insights and financing solutions for buyers in Boulder City.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-white text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
+            <a href="../index.html">
+                <div class="flex items-center gap-x-3">
+                    <img src="../modernlending.jpg" alt="Modern Lending Logo" class="h-10 w-auto">
+                    <div>
+                        <div class="font-semibold text-2xl tracking-tight">Modern Lending</div>
+                        <div class="text-[10px] text-sky-600 font-medium -mt-1">NEVADA • DEREK LAPIKAS</div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="../index.html#meet-derek" class="hover:text-sky-600">Meet Derek</a>
+                <a href="../index.html#programs" class="hover:text-sky-600">Loan Programs</a>
+                <a href="../index.html#locations" class="hover:text-sky-600">Locations</a>
+                <a href="../index.html#tools" class="hover:text-sky-600">Tools</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-x-4">
+                <a href="tel:7024601077" class="text-sm font-medium hover:text-sky-600">(702) 460-1077</a>
+                <button onclick="openModal()" class="px-6 py-2.5 bg-slate-900 hover:bg-black text-white text-sm font-semibold rounded-2xl transition-all">
+                    Schedule Consultation
+                </button>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-6 py-6 space-y-4 text-sm font-medium">
+                <a href="../index.html#meet-derek" class="block py-2 hover:text-sky-600">Meet Derek</a>
+                <a href="../index.html#programs" class="block py-2 hover:text-sky-600">Loan Programs</a>
+                <a href="../index.html#locations" class="block py-2 hover:text-sky-600">Locations</a>
+                <a href="../index.html#tools" class="block py-2 hover:text-sky-600">Tools</a>
+                <div class="pt-4 border-t">
+                    <a href="tel:7024601077" class="block py-2 text-sky-600 font-medium">(702) 460-1077</a>
+                    <button onclick="openModal()" class="mt-3 w-full px-6 py-3 bg-slate-900 text-white font-semibold rounded-2xl">
+                        Schedule Consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="bg-slate-950 text-white py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h1 class="text-6xl tracking-tighter font-semibold">Boulder City, Nevada</h1>
+            <p class="mt-4 text-2xl text-white/90">A unique, historic city with no casinos, a small-town atmosphere, and easy access to Lake Mead and outdoor recreation.</p>
+        </div>
+    </header>
+
+    <!-- Overview -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-4xl tracking-tight font-semibold mb-6">Overview of Boulder City</h2>
+        <div class="prose prose-slate max-w-none text-lg">
+            <p>Boulder City is one of the most unique cities in Nevada. It is the only city in the state where gambling is not allowed, giving it a distinct, small-town character that sets it apart from the rest of the Las Vegas Valley.</p>
+            
+            <p class="mt-4">Located about 30–35 minutes southeast of the Las Vegas Strip, Boulder City has a historic downtown, well-preserved architecture, and a relaxed pace of life. It was originally built to house workers during the construction of the Hoover Dam and has maintained much of its historic charm.</p>
+            
+            <p class="mt-4">The city is known for its proximity to Lake Mead, outdoor recreation opportunities, and a strong sense of community. Many residents and visitors appreciate its quieter, more laid-back atmosphere compared to the energy of Las Vegas.</p>
+        </div>
+    </section>
+
+    <!-- Market Snapshot -->
+    <section class="max-w-5xl mx-auto px-6 py-12 border-y">
+        <h2 class="text-3xl tracking-tight font-semibold mb-8">Boulder City Market Snapshot – June 2026</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Median Sale Price</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">$499,000</div>
+                <div class="text-sm text-red-600 mt-1">−1.4% year-over-year</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Avg. Days on Market</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">~70–85 days</div>
+                <div class="text-sm text-emerald-600 mt-1">Slower than Las Vegas metro</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Housing Inventory</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">Low</div>
+                <div class="text-sm text-emerald-600 mt-1">Limited supply due to growth restrictions</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Clark County Population (2026 Est.)</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">~2.5 million</div>
+                <div class="text-sm text-emerald-600 mt-1">+1.7% annual growth</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Major Employment Sectors</div>
+                <div class="text-lg font-medium mt-1">Tourism (Lake Mead), government, small business, healthcare</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Market Note</div>
+                <div class="text-lg font-medium mt-1">Boulder City has limited new construction due to growth restrictions, which helps maintain its historic character but keeps inventory low.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neighborhoods & Lifestyle -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-4xl tracking-tight font-semibold mb-8">Neighborhoods &amp; Lifestyle in Boulder City</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 text-lg">
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Historic Downtown</h3>
+                <p class="text-slate-600">Boulder City’s downtown area features historic buildings, local shops, restaurants, and a charming small-town atmosphere. It is a focal point for community events and tourism.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Residential Areas</h3>
+                <p class="text-slate-600">The city has a mix of older historic homes and some newer construction. Many neighborhoods feature mature landscaping and a quiet, established feel.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Outdoor Recreation</h3>
+                <p class="text-slate-600">Boulder City’s location near Lake Mead makes it popular for boating, fishing, hiking, and other outdoor activities. It offers a more nature-oriented lifestyle than the urban Las Vegas area.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">No-Casino Policy</h3>
+                <p class="text-slate-600">Boulder City is the only city in Nevada where gambling is banned. This policy helps preserve its small-town character and attracts residents who prefer a quieter environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Estate Market -->
+    <section class="bg-slate-50 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl tracking-tight font-semibold mb-6">Real Estate Market in Boulder City</h2>
+            <div class="prose prose-slate max-w-none text-lg">
+                <p>Boulder City has a unique real estate market due to strict growth limitations and its no-casino policy. Inventory is generally lower than in the Las Vegas metro area, which can lead to more competition for available homes.</p>
+                
+                <p class="mt-4">The market tends to attract buyers who value the city’s historic charm, small-town atmosphere, and proximity to Lake Mead. Because new construction is limited, many homes in Boulder City are older, though some newer properties exist on the outskirts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schools & Proximity -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-4xl tracking-tight font-semibold mb-8">Schools &amp; Accessibility</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 text-lg">
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Schools</h3>
+                <p class="text-slate-600">Boulder City is served by its own school district, which is separate from Clark County School District. The smaller district often appeals to families who prefer a more community-oriented school environment.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Proximity</h3>
+                <p class="text-slate-600">Boulder City is approximately 30–35 minutes from the Las Vegas Strip. It offers easy access to Lake Mead, Hoover Dam, and outdoor recreation while still being within a reasonable drive of the Las Vegas metropolitan area.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financing -->
+    <section class="bg-slate-50 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl tracking-tight font-semibold mb-6">Financing Considerations in Boulder City</h2>
+            <div class="prose prose-slate max-w-none text-lg">
+                <p>Derek Lapikas works with buyers purchasing homes in Boulder City. Because the city has limited new construction and many older homes, buyers often need to consider factors such as property condition, historic status, and potential renovation needs when exploring financing options.</p>
+                
+                <p class="mt-4">Whether buying a historic home near downtown or a newer property on the edge of the city, Derek helps clients understand how Boulder City’s unique characteristics may affect the lending process.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-4xl tracking-tight font-semibold mb-8">Frequently Asked Questions About Boulder City</h2>
+        
+        <div class="space-y-4">
+            <div class="border border-slate-200 rounded-2xl p-6">
+                <div class="font-semibold text-lg">How far is Boulder City from the Las Vegas Strip?</div>
+                <div class="mt-2 text-slate-600">Boulder City is approximately 30–35 minutes from the Las Vegas Strip, depending on traffic.</div>
+            </div>
+            
+            <div class="border border-slate-200 rounded-2xl p-6">
+                <div class="font-semibold text-lg">Why is Boulder City different from other Nevada cities?</div>
+                <div class="mt-2 text-slate-600">Boulder City is the only city in Nevada where gambling is not allowed. It has a historic downtown, a small-town atmosphere, and strict growth limitations.</div>
+            </div>
+            
+            <div class="border border-slate-200 rounded-2xl p-6">
+                <div class="font-semibold text-lg">Is Boulder City a good area for buyers who want a quieter lifestyle?</div>
+                <div class="mt-2 text-slate-600">Yes. Many people choose Boulder City specifically for its relaxed pace, historic character, and proximity to Lake Mead and outdoor recreation.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-slate-950 text-white py-16">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-4xl tracking-tight font-semibold mb-4">Considering a home in Boulder City?</h2>
+            <p class="text-xl text-white/80 mb-8">Derek Lapikas can help you understand your financing options in the Boulder City area.</p>
+            <button onclick="openModal()" class="inline-flex px-9 py-4 bg-white text-slate-900 font-semibold rounded-2xl text-lg">Schedule a Consultation</button>
+        </div>
+    </section>
+
+    <!-- Consultation Modal -->
+    <div id="consultation-modal" onclick="if (event.target.id === 'consultation-modal') closeModal()" class="hidden fixed inset-0 bg-black bg-opacity-50 z-[999] flex items-center justify-center p-4">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white rounded-3xl max-w-lg w-full p-8 relative">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-times text-2xl"></i>
+            </button>
+
+            <h3 class="text-3xl font-semibold tracking-tight mb-2">Schedule a Consultation</h3>
+            <p class="text-slate-600 mb-6">Fill out the form below and Derek will personally follow up within 24 hours.</p>
+
+            <form name="consultation" method="POST" data-netlify="true" class="space-y-5">
+                <input type="hidden" name="form-name" value="consultation">
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">Full Name</label>
+                    <input type="text" name="name" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Phone Number</label>
+                        <input type="tel" name="phone" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Email Address</label>
+                        <input type="email" name="email" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">What are you looking for?</label>
+                    <select name="interest" class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                        <option>Purchasing a home in Nevada</option>
+                        <option>Refinancing my current home</option>
+                        <option>VA Loan options</option>
+                        <option>Just exploring my options</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full bg-slate-900 hover:bg-black text-white font-semibold py-4 rounded-2xl text-lg transition-all mt-2">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            const modal = document.getElementById('consultation-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('consultation-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = menuBtn.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+        }
+    </script>
+</body>
+</html>
