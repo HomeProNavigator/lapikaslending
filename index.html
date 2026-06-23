@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Derek Lapikas | Nevada Mortgage Expert | Las Vegas &amp; Henderson</title>
-    <meta name="description" content="Derek Lapikas is Nevada’s trusted mortgage expert. Helping Las Vegas and Henderson families buy homes, refinance, and make confident financial decisions with personalized guidance.">
+    <meta name="description" content="Derek Lapikas is Nevada’s trusted mortgage expert helping families in Las Vegas and Henderson buy homes and refinance.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="bg-white text-slate-800">
 
-    <!-- Navbar is loaded dynamically via script at the bottom -->
+    <!-- Navbar is loaded dynamically from includes/navbar.html -->
 
     <!-- Hero -->
     <header class="bg-slate-950 text-white pt-16 pb-20">
@@ -29,8 +29,12 @@
             </p>
             
             <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-                <a href="#consultation" class="inline-flex justify-center items-center px-9 py-4 bg-white text-slate-900 font-semibold text-lg rounded-3xl hover:bg-slate-100 transition-all">Schedule Consultation</a>
-                <a href="#pre-approval" class="inline-flex justify-center items-center px-9 py-4 border-2 border-white/70 hover:bg-white/10 font-semibold text-lg rounded-3xl transition-all">Get Pre-Approved</a>
+                <button onclick="openModal()" class="inline-flex justify-center items-center px-9 py-4 bg-white text-slate-900 font-semibold text-lg rounded-3xl hover:bg-slate-100 transition-all">
+                    Schedule Consultation
+                </button>
+                <a href="#pre-approval" class="inline-flex justify-center items-center px-9 py-4 border-2 border-white/70 hover:bg-white/10 font-semibold text-lg rounded-3xl transition-all">
+                    Get Pre-Approved
+                </a>
             </div>
             
             <div class="flex flex-col sm:flex-row justify-center items-center gap-x-8 text-sm text-white/70">
@@ -56,7 +60,7 @@
             <div class="md:col-span-5 mb-10 md:mb-0">
                 <div class="sticky top-24">
                     <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100">
-                        <img src="derek.jpg" alt="Derek Lapikas - Nevada Mortgage Expert" class="w-full h-full object-cover">
+                        <img src="derek.jpg" alt="Derek Lapikas" class="w-full h-full object-cover">
                     </div>
                     <div class="mt-6">
                         <div class="font-semibold text-3xl tracking-tight">Derek Lapikas</div>
@@ -72,11 +76,9 @@
                 <div class="prose prose-slate max-w-none text-[15.5px] text-slate-600">
                     <p>Born in Alaska and now a proud Nevada resident for over 24 years, Derek Lapikas brings a unique combination of military discipline, local market knowledge, and genuine passion for helping people achieve homeownership.</p>
                     
-                    <p class="mt-4">As a Navy veteran himself, Derek has a special connection with fellow veterans and takes pride in guiding them through the VA loan process. With 6 years of mortgage experience, he has built a reputation for saving loans that others couldn’t close by combining deep product knowledge with relentless problem-solving and personalized service.</p>
+                    <p class="mt-4">As a Navy veteran himself, Derek has a special connection with fellow veterans. With 6 years of mortgage experience, he has built a reputation for saving loans that others couldn’t close through deep product knowledge and personalized service.</p>
                     
-                    <p class="mt-4">Derek is known for his transparent, educational approach. He believes clients deserve to fully understand their options. Whether you’re a first-time buyer in Henderson, a veteran using your VA benefit in Las Vegas, or a homeowner looking to refinance in Summerlin, Derek provides clear guidance backed by Modern Lending’s competitive rates and fast processing.</p>
-                    
-                    <p class="mt-4">Outside of work, Derek enjoys golfing and cheering on his Chicago Bears.</p>
+                    <p class="mt-4">Derek is known for his transparent, educational approach. Whether you’re a first-time buyer in Henderson, a veteran using your VA benefit, or a homeowner looking to refinance in Summerlin, he provides clear guidance backed by Modern Lending’s competitive rates and fast processing.</p>
                 </div>
             </div>
         </div>
@@ -152,7 +154,7 @@
         <div class="max-w-3xl mx-auto px-6 text-center">
             <h2 class="text-5xl tracking-tighter font-semibold mb-6">Ready to make your next move with confidence?</h2>
             <p class="text-xl text-white/80 mb-8">Get personalized guidance from Derek Lapikas today.</p>
-            <a href="#quote" class="inline-flex px-10 py-4 bg-white text-slate-900 font-semibold text-lg rounded-3xl">Schedule Your Consultation</a>
+            <button onclick="openModal()" class="inline-flex px-10 py-4 bg-white text-slate-900 font-semibold text-lg rounded-3xl">Schedule Your Consultation</button>
         </div>
     </section>
 
@@ -160,89 +162,80 @@
     <footer class="bg-slate-950 text-white/60 text-sm py-10 border-t border-white/10">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <p>© 2026 Modern Lending Nevada • Derek Lapikas, Loan Officer • NMLS #1742770</p>
-            <p class="mt-2 text-xs">(702) 460-1077 • Equal Housing Lender. This is not a commitment to lend.</p>
+            <p class="mt-2 text-xs">(702) 460-1077 • Equal Housing Lender</p>
         </div>
     </footer>
 
-    <!-- Navbar Injection Script (Loads the single navbar) -->
+    <!-- Consultation Modal -->
+    <div id="consultation-modal" onclick="if (event.target.id === 'consultation-modal') closeModal()" 
+         class="hidden fixed inset-0 bg-black bg-opacity-50 z-[999] flex items-center justify-center p-4">
+        
+        <div onclick="event.stopImmediatePropagation()" class="bg-white rounded-3xl max-w-lg w-full p-8 relative">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-times text-2xl"></i>
+            </button>
+
+            <h3 class="text-3xl font-semibold tracking-tight mb-2">Schedule a Consultation</h3>
+            <p class="text-slate-600 mb-6">Fill out the form below and Derek will personally follow up within 24 hours.</p>
+
+            <form name="consultation" method="POST" data-netlify="true" class="space-y-5">
+                <input type="hidden" name="form-name" value="consultation">
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">Full Name</label>
+                    <input type="text" name="name" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Phone Number</label>
+                        <input type="tel" name="phone" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Email Address</label>
+                        <input type="email" name="email" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">What are you looking for?</label>
+                    <select name="interest" class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                        <option>Purchasing a home in Nevada</option>
+                        <option>Refinancing my current home</option>
+                        <option>VA Loan options</option>
+                        <option>Just exploring my options</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full bg-slate-900 hover:bg-black text-white font-semibold py-4 rounded-2xl text-lg transition-all mt-2">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navbar Injection + Modal Functions -->
     <script>
+        // Load Navbar
         fetch('/includes/navbar.html')
             .then(res => res.text())
             .then(data => {
                 document.body.insertAdjacentHTML('afterbegin', data);
             });
+
+        // Modal Functions
+        function openModal() {
+            const modal = document.getElementById('consultation-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('consultation-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
     </script>
 
-    <!-- ====================== CONSULTATION MODAL ====================== -->
-<div id="consultation-modal" onclick="if (event.target.id === 'consultation-modal') closeModal()" 
-     class="hidden fixed inset-0 bg-black bg-opacity-50 z-[999] flex items-center justify-center p-4">
-    
-    <div onclick="event.stopImmediatePropagation()" 
-         class="bg-white rounded-3xl max-w-lg w-full p-8 relative">
-        
-        <!-- Close Button -->
-        <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600">
-            <i class="fa-solid fa-times text-2xl"></i>
-        </button>
-
-        <h3 class="text-3xl font-semibold tracking-tight mb-2">Schedule a Consultation</h3>
-        <p class="text-slate-600 mb-6">Fill out the form below and Derek will personally follow up within 24 hours.</p>
-
-        <!-- Netlify Form -->
-        <form name="consultation" method="POST" data-netlify="true" class="space-y-5">
-            <input type="hidden" name="form-name" value="consultation">
-
-            <div>
-                <label class="block text-sm font-medium text-slate-600 mb-1">Full Name</label>
-                <input type="text" name="name" required 
-                       class="w-full border border-slate-300 rounded-2xl px-5 py-3 focus:outline-none focus:border-sky-500">
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                    <label class="block text-sm font-medium text-slate-600 mb-1">Phone Number</label>
-                    <input type="tel" name="phone" required 
-                           class="w-full border border-slate-300 rounded-2xl px-5 py-3 focus:outline-none focus:border-sky-500">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-slate-600 mb-1">Email Address</label>
-                    <input type="email" name="email" required 
-                           class="w-full border border-slate-300 rounded-2xl px-5 py-3 focus:outline-none focus:border-sky-500">
-                </div>
-            </div>
-
-            <div>
-                <label class="block text-sm font-medium text-slate-600 mb-1">What are you looking for?</label>
-                <select name="interest" class="w-full border border-slate-300 rounded-2xl px-5 py-3 focus:outline-none focus:border-sky-500">
-                    <option>Purchasing a home in Nevada</option>
-                    <option>Refinancing my current home</option>
-                    <option>VA Loan options</option>
-                    <option>Just exploring my options</option>
-                </select>
-            </div>
-
-            <button type="submit" 
-                    class="w-full bg-slate-900 hover:bg-black text-white font-semibold py-4 rounded-2xl text-lg transition-all mt-2">
-                Submit Request
-            </button>
-        </form>
-    </div>
-</div>
-
-<script>
-    function openModal() {
-        const modal = document.getElementById('consultation-modal');
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-    }
-
-    function closeModal() {
-        const modal = document.getElementById('consultation-modal');
-        modal.classList.remove('flex');
-        modal.classList.add('hidden');
-    }
-</script>
-<!-- ====================== END MODAL ====================== -->
-    
 </body>
 </html>
