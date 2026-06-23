@@ -203,5 +203,15 @@
         // Show first tab by default
         document.getElementById('content-0').classList.remove('hidden');
     </script>
+
+    <!-- Footer Injection Script -->
+<script>
+    fetch('/includes/footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+</script>
+    
 </body>
 </html>
