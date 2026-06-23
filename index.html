@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derek Lapikas | Modern Lending Nevada • Las Vegas &amp; Henderson Mortgage Expert</title>
+    <meta name="description" content="Local Nevada mortgage lender Derek Lapikas with Modern Lending. Expert guidance on Conventional, FHA, VA, USDA, Jumbo &amp; Refinance loans for Las Vegas and Henderson. Free personalized quotes &amp; refinance calculator.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .heading-serif { font-family: 'Playfair Display', Georgia, serif; }
+        
+        .loan-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .loan-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        
+        .nav-scrolled { box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
+        
+        .modern-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+        
+        .faq-question { transition: all 0.2s ease; }
+        .faq-question:hover { color: #0ea5e9; }
+        
+        .modal { animation: modalPop 0.2s ease forwards; }
+        @keyframes modalPop { from { opacity: 0; transform: scale(0.95) translateY(20px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+        
+        .calculator-input { transition: all 0.2s ease; }
+        .calculator-input:focus { outline: none; box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-x-3">
+                    <div class="flex items-center gap-x-3">
+                        <div class="w-11 h-11 bg-slate-900 rounded-2xl flex items-center justify-center">
+                            <span class="text-white font-bold text-3xl tracking-tighter">ML</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-2xl tracking-tight">Modern Lending</div>
+                            <div class="text-[10px] text-sky-600 font-medium -mt-1 tracking-[1px]">NEVADA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                    <a href="#programs" class="hover:text-sky-600 transition-colors">Loan Programs</a>
+                    <a href="#calculator" class="hover:text-sky-600 transition-colors">Refinance Calculator</a>
+                    <a href="#value" class="hover:text-sky-600 transition-colors">How We Help</a>
+                    <a href="#faq" class="hover:text-sky-600 transition-colors">FAQ</a>
+                    <a href="#blog" class="hover:text-sky-600 transition-colors">Resources</a>
+                </div>
+                
+                <div class="flex items-center gap-x-3">
+                    <a href="#quote" class="hidden sm:inline-flex px-6 py-2.5 text-sm font-semibold rounded-2xl border border-slate-300 hover:bg-slate-100 transition-colors">Get Quote</a>
+                    <a href="#contact" class="inline-flex items-center px-7 py-2.5 bg-slate-900 hover:bg-black text-white text-sm font-semibold rounded-2xl transition-all">Speak with Derek</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="modern-gradient text-white pt-16 pb-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-x-2 bg-white/10 px-5 py-2 rounded-full text-sm mb-8 border border-white/20">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span class="font-medium tracking-wide">Serving Las Vegas &amp; Henderson Families</span>
+                </div>
+                
+                <h1 class="text-7xl md:text-[82px] font-semibold tracking-tighter leading-none mb-6">
+                    Your Trusted Local<br>
+                    <span class="text-sky-400">Nevada Mortgage Partner</span>
+                </h1>
+                
+                <p class="max-w-2xl text-2xl text-white/90 font-light tracking-tight mb-10">
+                    Derek Lapikas with Modern Lending delivers fast, personalized purchase and refinance solutions backed by thousands of five-star reviews.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#quote" class="inline-flex justify-center items-center px-9 py-4 bg-white text-slate-900 font-semibold text-lg rounded-3xl hover:bg-slate-100 transition-all shadow-xl">Get Your Free Personalized Quote</a>
+                    <a href="#programs" class="inline-flex justify-center items-center px-9 py-4 border-2 border-white/60 hover:bg-white/10 font-semibold text-lg rounded-3xl transition-all">Explore All Loan Programs</a>
+                </div>
+                
+                <div class="mt-10 flex items-center gap-x-8 text-sm">
+                    <div>
+                        <div class="font-semibold text-lg">5,000+ Five-Star Reviews</div>
+                        <div class="text-white/60">Company-wide • Fast closings in as little as 2 weeks</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="bg-white border-b py-5">
+        <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-x-8 gap-y-3 text-sm text-center">
+            <div class="flex items-center gap-x-2 text-slate-600"><i class="fa-solid fa-clock text-emerald-500"></i> <span class="font-medium">Closings often in 2–3 weeks</span></div>
+            <div class="flex items-center gap-x-2 text-slate-600"><i class="fa-solid fa-video text-sky-500"></i> <span class="font-medium">Personalized video loan explanations</span></div>
+            <div class="flex items-center gap-x-2 text-slate-600"><i class="fa-solid fa-shield-halved text-amber-500"></i> <span class="font-medium">NMLS Licensed in Nevada</span></div>
+        </div>
+    </div>
+
+    <!-- ABOUT DEREK -->
+    <section class="max-w-6xl mx-auto px-6 pt-16 pb-12">
+        <div class="grid md:grid-cols-12 gap-x-12 items-center">
+            <div class="md:col-span-5 mb-10 md:mb-0">
+                <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-slate-100">
+                    <img src="https://picsum.photos/id/1005/800/600" alt="Derek Lapikas - Your Local Las Vegas &amp; Henderson Mortgage Lender" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="md:col-span-7">
+                <div class="uppercase text-sky-600 tracking-[2.5px] text-xs font-semibold mb-3">YOUR LOCAL NEVADA EXPERT</div>
+                <h2 class="text-6xl tracking-tighter font-semibold leading-none mb-6">Derek Lapikas<br>with Modern Lending</h2>
+                
+                <div class="prose prose-slate max-w-none text-[15.5px] text-slate-600">
+                    <p class="mb-5">[**Replace with accurate bio** — e.g. “Derek has helped hundreds of Southern Nevada families with home purchases and strategic refinances. He combines deep local market knowledge with Modern Lending’s top-tier rates and fast, personalized service.”]</p>
+                    <p>Backed by Modern Lending’s award-winning team, Derek brings the same service-first approach and proven results to Las Vegas and Henderson clients.</p>
+                </div>
+                
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <div class="px-5 py-2 bg-slate-100 rounded-2xl text-sm font-medium flex items-center gap-x-2"><i class="fa-solid fa-check text-emerald-500"></i> VA Loan Specialist</div>
+                    <div class="px-5 py-2 bg-slate-100 rounded-2xl text-sm font-medium flex items-center gap-x-2"><i class="fa-solid fa-check text-emerald-500"></i> Local Henderson &amp; Las Vegas Expertise</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOAN PROGRAMS -->
+    <section id="programs" class="bg-white py-16 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="text-sky-600 uppercase tracking-[2.5px] text-xs font-semibold mb-3">EVERY OPTION. CLEARLY EXPLAINED.</div>
+                <h2 class="text-6xl tracking-tighter font-semibold">Loan Programs for Southern Nevada</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cards with onclick to modals (same as before but improved) -->
+                <div onclick="showLoanModal('conventional')" class="loan-card cursor-pointer bg-slate-50 border border-slate-200 rounded-3xl p-8 hover:border-sky-200">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-home text-3xl"></i></div>
+                        <div class="font-semibold text-2xl tracking-tight">Conventional Loans</div>
+                    </div>
+                    <p class="text-slate-600 mb-4">Fixed or adjustable rates for buyers with strong credit.</p>
+                    <div class="text-sm font-medium text-emerald-600">Best for: Move-up buyers, strong credit, conforming limits</div>
+                </div>
+                
+                <div onclick="showLoanModal('fha')" class="loan-card cursor-pointer bg-slate-50 border border-slate-200 rounded-3xl p-8 hover:border-sky-200">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-handshake text-3xl"></i></div>
+                        <div class="font-semibold text-2xl tracking-tight">FHA Loans</div>
+                    </div>
+                    <p class="text-slate-600 mb-4">Lower credit &amp; down payment requirements, government-backed.</p>
+                    <div class="text-sm font-medium text-emerald-600">Best for: First-time buyers, lower credit scores</div>
+                </div>
+                
+                <div onclick="showLoanModal('va')" class="loan-card cursor-pointer bg-slate-50 border border-slate-200 rounded-3xl p-8 hover:border-sky-200">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-medal text-3xl"></i></div>
+                        <div class="font-semibold text-2xl tracking-tight">VA Loans</div>
+                    </div>
+                    <p class="text-slate-600 mb-4">No down payment, competitive rates, no PMI for eligible veterans.</p>
+                    <div class="text-sm font-medium text-emerald-600">Best for: Veterans &amp; service members in Nevada</div>
+                </div>
+                
+                <div onclick="showLoanModal('usda')" class="loan-card cursor-pointer bg-slate-50 border border-slate-200 rounded-3xl p-8 hover:border-sky-200">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-14 h-14 bg-lime-100 text-lime-600 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-seedling text-3xl"></i></div>
+                        <div class="font-semibold text-2xl tracking-tight">USDA Loans</div>
+                    </div>
+                    <p class="text-slate-600 mb-4">100% financing for eligible rural &amp; suburban properties.</p>
+                    <div class="text-sm font-medium text-emerald-600">Best for: Buyers in qualifying Nevada areas</div>
+                </div>
+                
+                <div onclick="showLoanModal('jumbo')" class="loan-card cursor-pointer bg-slate-50 border border-slate-200 rounded-3xl p-8 hover:border-sky-200">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-14 h-14 bg-violet-100 text-violet-600 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-building text-3xl"></i></div>
+                        <div class="font-semibold text-2xl tracking-tight">Jumbo &amp; Super Jumbo</div>
+                    </div>
+                    <p class="text-slate-600 mb-4">Financing above conforming limits for higher-value homes.</p>
+                    <div class="text-sm font-medium text-emerald-600">Best for: Luxury buyers in premium Las Vegas &amp; Henderson areas</div>
+                </div>
+                
+                <div onclick="showLoanModal('refi')" class="loan-card cursor-pointer bg-slate-50 border border-slate-200 rounded-3xl p-8 hover:border-sky-200">
+                    <div class="flex items-center gap-x-4 mb-6">
+                        <div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-sync text-3xl"></i></div>
+                        <div class="font-semibold text-2xl tracking-tight">Refinance Options</div>
+                    </div>
+                    <p class="text-slate-600 mb-4">Rate &amp; term, cash-out, VA streamline, and more.</p>
+                    <div class="text-sm font-medium text-emerald-600">Best for: Lowering rates or accessing home equity</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REFINANCE CALCULATOR -->
+    <section id="calculator" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="text-center mb-10">
+            <div class="text-sky-600 tracking-[2.5px] text-xs font-semibold mb-3">FREE TOOL</div>
+            <h2 class="text-5xl tracking-tighter font-semibold">Refinance Savings Calculator</h2>
+            <p class="mt-3 text-xl text-slate-600">See how much you could save by refinancing your Nevada home.</p>
+        </div>
+        
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 md:p-10 shadow-sm">
+            <div class="grid md:grid-cols-2 gap-x-10 gap-y-8">
+                <!-- Inputs -->
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">Current Loan Balance</label>
+                        <div class="relative">
+                            <span class="absolute left-5 top-3.5 text-slate-400">$</span>
+                            <input id="balance" type="number" value="450000" class="calculator-input w-full pl-9 pr-5 py-3.5 border border-slate-300 rounded-2xl text-lg font-medium">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">Current Interest Rate (%)</label>
+                        <input id="currentRate" type="number" step="0.01" value="6.75" class="calculator-input w-full px-5 py-3.5 border border-slate-300 rounded-2xl text-lg font-medium">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">New Interest Rate (%)</label>
+                        <input id="newRate" type="number" step="0.01" value="5.99" class="calculator-input w-full px-5 py-3.5 border border-slate-300 rounded-2xl text-lg font-medium">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">Remaining Loan Term (years)</label>
+                        <input id="term" type="number" value="25" class="calculator-input w-full px-5 py-3.5 border border-slate-300 rounded-2xl text-lg font-medium">
+                    </div>
+                    
+                    <button onclick="calculateSavings()" class="w-full mt-2 bg-slate-900 hover:bg-black text-white font-semibold py-4 rounded-2xl text-lg transition-all">Calculate My Savings</button>
+                </div>
+                
+                <!-- Results -->
+                <div id="results" class="hidden bg-slate-50 border border-slate-200 rounded-3xl p-8">
+                    <div class="text-sm text-slate-500 mb-4">YOUR POTENTIAL SAVINGS</div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <div class="text-sm text-slate-500">Monthly Payment Savings</div>
+                            <div id="monthlySavings" class="text-5xl font-semibold text-emerald-600 tracking-tighter"></div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-slate-500">Total Interest Savings</div>
+                            <div id="totalSavings" class="text-5xl font-semibold text-emerald-600 tracking-tighter"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t text-sm text-slate-600">
+                        These are estimates. Actual savings depend on your credit, loan details, and closing costs. Contact Derek for a personalized analysis.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUE SECTION -->
+    <section id="value" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-5xl tracking-tighter font-semibold">We deliver immediate value</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-8 bg-white border border-slate-200 rounded-3xl">
+                <i class="fa-solid fa-graduation-cap text-4xl text-sky-500 mb-6"></i>
+                <div class="font-semibold text-2xl mb-3">Education First</div>
+                <p class="text-slate-600">We explain every option clearly so you can make confident decisions.</p>
+            </div>
+            <div class="p-8 bg-white border border-slate-200 rounded-3xl">
+                <i class="fa-solid fa-map-marked text-4xl text-emerald-500 mb-6"></i>
+                <div class="font-semibold text-2xl mb-3">Local Expertise</div>
+                <p class="text-slate-600">Henderson &amp; Las Vegas specific insights, neighborhoods, and programs.</p>
+            </div>
+            <div class="p-8 bg-white border border-slate-200 rounded-3xl">
+                <i class="fa-solid fa-handshake text-4xl text-amber-500 mb-6"></i>
+                <div class="font-semibold text-2xl mb-3">Strong Local Partnerships</div>
+                <p class="text-slate-600">Relationships with realtors and professionals across Southern Nevada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="text-center mb-10">
+            <h2 class="text-5xl tracking-tighter font-semibold">Frequently Asked Questions</h2>
+        </div>
+        
+        <div class="space-y-3">
+            <div class="border border-slate-200 rounded-3xl overflow-hidden">
+                <button onclick="toggleFAQ(this)" class="faq-question w-full flex justify-between items-center px-8 py-5 text-left font-medium text-lg hover:bg-slate-50">
+                    <span>How fast can I close on a home in Las Vegas or Henderson?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform"></i>
+                </button>
+                <div class="faq-answer hidden px-8 pb-6 text-slate-600">Many clients close in as little as two weeks with Modern Lending’s streamlined process. Derek personally guides you through every step.</div>
+            </div>
+            
+            <div class="border border-slate-200 rounded-3xl overflow-hidden">
+                <button onclick="toggleFAQ(this)" class="faq-question w-full flex justify-between items-center px-8 py-5 text-left font-medium text-lg hover:bg-slate-50">
+                    <span>Do I need perfect credit for a VA or FHA loan?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform"></i>
+                </button>
+                <div class="faq-answer hidden px-8 pb-6 text-slate-600">No. VA and FHA loans have more flexible credit requirements than conventional loans. Derek can review your specific situation.</div>
+            </div>
+            
+            <div class="border border-slate-200 rounded-3xl overflow-hidden">
+                <button onclick="toggleFAQ(this)" class="faq-question w-full flex justify-between items-center px-8 py-5 text-left font-medium text-lg hover:bg-slate-50">
+                    <span>Is now a good time to refinance in Nevada?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform"></i>
+                </button>
+                <div class="faq-answer hidden px-8 pb-6 text-slate-600">It depends on your current rate, loan balance, and goals. Use the calculator above or speak with Derek for a personalized analysis.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG / RESOURCES -->
+    <section id="blog" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <div class="text-sky-600 tracking-[2.5px] text-xs font-semibold mb-2">KNOWLEDGE IS POWER</div>
+                <h2 class="text-5xl tracking-tighter font-semibold">Resources for Nevada Homeowners</h2>
+            </div>
+            <a href="#" class="hidden md:inline-flex text-sm font-semibold items-center gap-x-2 text-sky-600">View All <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Sample educational cards -->
+            <div class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition-all">
+                <div class="h-40 bg-slate-200"></div>
+                <div class="p-6">
+                    <div class="text-xs text-sky-600 font-medium mb-2">FIRST-TIME BUYERS</div>
+                    <div class="font-semibold text-xl leading-tight">Is 2026 a Good Time to Buy in Henderson?</div>
+                    <p class="text-sm text-slate-600 mt-3 line-clamp-3">Current inventory, negotiation opportunities, and what buyers should know.</p>
+                </div>
+            </div>
+            
+            <div class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition-all">
+                <div class="h-40 bg-slate-200"></div>
+                <div class="p-6">
+                    <div class="text-xs text-sky-600 font-medium mb-2">REFINANCE</div>
+                    <div class="font-semibold text-xl leading-tight">When Does Refinancing Make Sense Right Now?</div>
+                    <p class="text-sm text-slate-600 mt-3 line-clamp-3">Breakeven analysis and current Nevada market trends.</p>
+                </div>
+            </div>
+            
+            <div class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition-all">
+                <div class="h-40 bg-slate-200"></div>
+                <div class="p-6">
+                    <div class="text-xs text-sky-600 font-medium mb-2">VA LOANS</div>
+                    <div class="font-semibold text-xl leading-tight">VA Loan Benefits for Nevada Veterans</div>
+                    <p class="text-sm text-slate-600 mt-3 line-clamp-3">No down payment options and what makes VA loans powerful in 2026.</p>
+                </div>
+            </div>
+            
+            <div class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition-all">
+                <div class="h-40 bg-slate-200"></div>
+                <div class="p-6">
+                    <div class="text-xs text-sky-600 font-medium mb-2">LOCAL MARKET</div>
+                    <div class="font-semibold text-xl leading-tight">Las Vegas &amp; Henderson Market Update – Summer 2026</div>
+                    <p class="text-sm text-slate-600 mt-3 line-clamp-3">Inventory trends and what they mean for buyers and sellers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA FORM (Netlify Forms ready) -->
+    <section id="quote" class="bg-slate-900 py-16 text-white">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-5xl tracking-tighter font-semibold mb-4">Ready to explore your options?</h2>
+            <p class="text-xl text-white/80 mb-8">Get a free personalized quote or refinance analysis from Derek.</p>
+            
+            <!-- Netlify Forms compatible form -->
+            <form name="contact" method="POST" data-netlify="true" class="max-w-md mx-auto bg-white/5 border border-white/10 rounded-3xl p-8 text-left">
+                <input type="hidden" name="form-name" value="contact">
+                
+                <div class="space-y-5">
+                    <div>
+                        <label class="text-xs tracking-widest text-white/60">FULL NAME</label>
+                        <input type="text" name="name" class="mt-1.5 w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-3.5 text-white placeholder:text-white/40" placeholder="Your name" required>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs tracking-widest text-white/60">PHONE</label>
+                            <input type="tel" name="phone" class="mt-1.5 w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-3.5 text-white placeholder:text-white/40" placeholder="(702) 555-0199" required>
+                        </div>
+                        <div>
+                            <label class="text-xs tracking-widest text-white/60">EMAIL</label>
+                            <input type="email" name="email" class="mt-1.5 w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-3.5 text-white placeholder:text-white/40" placeholder="you@email.com" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-xs tracking-widest text-white/60">I'M INTERESTED IN</label>
+                        <select name="interest" class="mt-1.5 w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-3.5 text-white">
+                            <option>Purchasing a home in Las Vegas or Henderson</option>
+                            <option>Refinancing my current home</option>
+                            <option>VA Loan options</option>
+                            <option>Just exploring my options</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="mt-7 w-full bg-white hover:bg-slate-100 text-slate-900 font-semibold py-4 rounded-2xl text-lg transition-all">Get My Free Personalized Quote</button>
+                <p class="text-center text-xs text-white/50 mt-4">Derek will personally follow up within 24 hours.</p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-white/60 text-xs py-10 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 text-center md:text-left md:flex md:justify-between items-center gap-y-3">
+            <div>© 2026 Modern Lending Nevada • Derek Lapikas, Loan Officer • NMLS #[INSERT]</div>
+            <div class="mt-3 md:mt-0 flex justify-center gap-x-6">
+                <a href="#" class="hover:text-white">Privacy</a>
+                <a href="#" class="hover:text-white">Licensing</a>
+                <a href="#" class="hover:text-white">Equal Housing Lender</a>
+            </div>
+        </div>
+        <div class="text-center text-[10px] mt-6 max-w-md mx-auto text-white/40">This is general information only. Not a commitment to lend. All loans subject to credit approval. Consult your financial advisor.</div>
+    </footer>
+
+    <!-- Loan Modals + Scripts -->
+    <div id="modal" onclick="hideModal()" class="hidden fixed inset-0 bg-black/60 z-[100] flex items-center justify-center p-6">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-auto modal">
+            <div class="p-8" id="modal-content"></div>
+        </div>
+    </div>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            // Already handled by CDN
+        }
+        
+        // Loan Modals
+        function showLoanModal(program) {
+            const modal = document.getElementById('modal');
+            const content = document.getElementById('modal-content');
+            let html = '';
+            
+            const programs = {
+                conventional: { title: "Conventional Loans", desc: "The most popular choice for buyers with strong credit. Fixed or adjustable rates available." },
+                fha: { title: "FHA Loans", desc: "Government-backed with lower credit and down payment requirements." },
+                va: { title: "VA Loans", desc: "No down payment, competitive rates, and no PMI for eligible veterans and service members." },
+                usda: { title: "USDA Loans", desc: "100% financing for eligible rural and suburban properties in Nevada." },
+                jumbo: { title: "Jumbo & Super Jumbo", desc: "Financing for higher-value homes above conforming loan limits." },
+                refi: { title: "Refinance Options", desc: "Rate & term, cash-out, VA streamline, and more to save money or access equity." }
+            };
+            
+            const p = programs[program];
+            html = `<h3 class="text-3xl font-semibold tracking-tight mb-4">${p.title}</h3>
+                    <p class="text-slate-600 mb-6">${p.desc}</p>
+                    <div class="text-sm text-slate-600">Contact Derek for a personalized recommendation based on your situation and goals in Southern Nevada.</div>
+                    <div class="mt-8 pt-6 border-t flex justify-end gap-3">
+                        <button onclick="hideModal()" class="px-8 py-3 border border-slate-300 rounded-2xl font-semibold">Close</button>
+                        <a href="#quote" onclick="hideModal()" class="px-8 py-3 bg-slate-900 text-white rounded-2xl font-semibold">Get Quote from Derek</a>
+                    </div>`;
+            
+            content.innerHTML = html;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+        
+        function hideModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+        
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.add('fa-rotate-180');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('fa-rotate-180');
+            }
+        }
+        
+        // Refinance Calculator
+        function calculateSavings() {
+            const balance = parseFloat(document.getElementById('balance').value);
+            const currentRate = parseFloat(document.getElementById('currentRate').value) / 100 / 12;
+            const newRate = parseFloat(document.getElementById('newRate').value) / 100 / 12;
+            const termYears = parseFloat(document.getElementById('term').value);
+            const months = termYears * 12;
+            
+            if (!balance || !currentRate || !newRate || !months) {
+                alert("Please fill in all fields with valid numbers.");
+                return;
+            }
+            
+            // Monthly payment formula
+            function monthlyPayment(rate, nper, pv) {
+                if (rate === 0) return pv / nper;
+                return pv * rate * Math.pow(1 + rate, nper) / (Math.pow(1 + rate, nper) - 1);
+            }
+            
+            const currentPayment = monthlyPayment(currentRate, months, balance);
+            const newPayment = monthlyPayment(newRate, months, balance);
+            
+            const monthlySavings = currentPayment - newPayment;
+            const totalInterestCurrent = (currentPayment * months) - balance;
+            const totalInterestNew = (newPayment * months) - balance;
+            const totalSavings = totalInterestCurrent - totalInterestNew;
+            
+            document.getElementById('monthlySavings').innerHTML = '$' + monthlySavings.toFixed(0).toLocaleString();
+            document.getElementById('totalSavings').innerHTML = '$' + totalSavings.toFixed(0).toLocaleString();
+            
+            document.getElementById('results').classList.remove('hidden');
+            document.getElementById('results').classList.add('block');
+        }
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled', 'bg-white/95', 'backdrop-blur-lg');
+            } else {
+                nav.classList.remove('nav-scrolled', 'bg-white/95', 'backdrop-blur-lg');
+            }
+        });
+        
+        // Keyboard support
+        document.addEventListener('keydown', function(e) {
+            if (e.key === "Escape") {
+                const modal = document.getElementById('modal');
+                if (!modal.classList.contains('hidden')) hideModal();
+            }
+        });
+        
+        // Initialize
+        initializeTailwind();
+        console.log('%c[Modern Lending Nevada] Enhanced Netlify-ready site loaded successfully.', 'color:#64748b');
+    </script>
+</body>
+</html>
