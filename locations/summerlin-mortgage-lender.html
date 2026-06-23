@@ -3,32 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summerlin | Derek Lapikas | Modern Lending</title>
-    <meta name="description" content="Derek Lapikas is your trusted Summerlin mortgage lender. Expert financing for home purchases and refinances in Summerlin, Las Vegas.">
+    <title>Summerlin Mortgage Lender | Derek Lapikas | Modern Lending</title>
+    <meta name="description" content="Expert mortgage guidance in Summerlin, Nevada. Derek Lapikas provides local insights and financing solutions for buyers in Summerlin.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="bg-white text-slate-800">
+
     <!-- Navbar -->
     <nav class="bg-white border-b sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
-            <div class="flex items-center gap-x-3">
+            <a href="../index.html">
                 <div class="flex items-center gap-x-3">
-                    <div class="w-11 h-11 bg-slate-900 rounded-2xl flex items-center justify-center">
-                        <span class="text-white font-bold text-3xl tracking-tighter">ML</span>
-                    </div>
+                    <img src="../modernlending.jpg" alt="Modern Lending Logo" class="h-10 w-auto">
                     <div>
                         <div class="font-semibold text-2xl tracking-tight">Modern Lending</div>
                         <div class="text-[10px] text-sky-600 font-medium -mt-1">NEVADA • DEREK LAPIKAS</div>
                     </div>
                 </div>
-            </div>
+            </a>
+
             <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
                 <a href="../index.html#meet-derek" class="hover:text-sky-600">Meet Derek</a>
                 <a href="../index.html#programs" class="hover:text-sky-600">Loan Programs</a>
+                <a href="../index.html#locations" class="hover:text-sky-600">Locations</a>
+                <a href="../index.html#tools" class="hover:text-sky-600">Tools</a>
             </div>
-            <div>
-                <a href="../index.html#consultation" class="px-6 py-2.5 bg-slate-900 text-white text-sm font-semibold rounded-2xl hover:bg-black transition-all">Schedule Consultation</a>
+
+            <div class="hidden md:flex items-center gap-x-4">
+                <a href="tel:7024601077" class="text-sm font-medium hover:text-sky-600">(702) 460-1077</a>
+                <button onclick="openModal()" class="px-6 py-2.5 bg-slate-900 hover:bg-black text-white text-sm font-semibold rounded-2xl transition-all">
+                    Schedule Consultation
+                </button>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-6 py-6 space-y-4 text-sm font-medium">
+                <a href="../index.html#meet-derek" class="block py-2 hover:text-sky-600">Meet Derek</a>
+                <a href="../index.html#programs" class="block py-2 hover:text-sky-600">Loan Programs</a>
+                <a href="../index.html#locations" class="block py-2 hover:text-sky-600">Locations</a>
+                <a href="../index.html#tools" class="block py-2 hover:text-sky-600">Tools</a>
+                <div class="pt-4 border-t">
+                    <a href="tel:7024601077" class="block py-2 text-sky-600 font-medium">(702) 460-1077</a>
+                    <button onclick="openModal()" class="mt-3 w-full px-6 py-3 bg-slate-900 text-white font-semibold rounded-2xl">
+                        Schedule Consultation
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -36,82 +62,239 @@
     <!-- Hero -->
     <header class="bg-slate-950 text-white py-16">
         <div class="max-w-5xl mx-auto px-6">
-            <h1 class="text-6xl tracking-tighter font-semibold">Summerlin Mortgage Lender</h1>
-            <p class="mt-4 text-2xl text-white/90">Premium mortgage solutions for buyers and homeowners in Summerlin from Derek Lapikas.</p>
-            <div class="mt-8">
-                <a href="../index.html#consultation" class="inline-flex px-8 py-4 bg-white text-slate-900 font-semibold rounded-2xl">Speak with Derek</a>
-            </div>
+            <h1 class="text-6xl tracking-tighter font-semibold">Summerlin, Nevada</h1>
+            <p class="mt-4 text-2xl text-white/90">One of the most desirable master-planned communities in the United States, offering upscale living at the base of Red Rock Canyon.</p>
         </div>
     </header>
 
-    <!-- Local Market -->
+    <!-- Overview -->
     <section class="max-w-5xl mx-auto px-6 py-16">
-        <h2 class="text-4xl tracking-tight font-semibold mb-8">Summerlin Housing Market</h2>
+        <h2 class="text-4xl tracking-tight font-semibold mb-6">Overview of Summerlin</h2>
         <div class="prose prose-slate max-w-none text-lg">
-            <p>Summerlin is one of Las Vegas’ most desirable master-planned communities, known for its high-quality homes, excellent schools, and strong property values. Derek Lapikas has extensive experience helping clients finance homes in Summerlin’s many villages and neighborhoods.</p>
-            <p class="mt-4">The area attracts professionals and families looking for upscale living, making jumbo and conventional loans common financing options here.</p>
+            <p>Summerlin is widely recognized as one of the premier master-planned communities in the United States. Located in the western part of the Las Vegas Valley, it sits at the foothills of the Red Rock Canyon National Conservation Area and offers a resort-style suburban lifestyle with extensive amenities.</p>
+            
+            <p class="mt-4">The community features a wide range of housing options, from luxury custom homes to more moderately priced residences. Summerlin is known for its abundant parks, golf courses, walking trails, and high-end shopping and dining options, including the Red Rock Resort and the Downtown Summerlin area.</p>
+            
+            <p class="mt-4">Many buyers are attracted to Summerlin for its strong sense of community, well-maintained neighborhoods, and convenient access to both outdoor recreation and the broader Las Vegas metropolitan area (typically 20–25 minutes to the Strip).</p>
         </div>
     </section>
 
-    <!-- Financing in Summerlin -->
+    <!-- Market Snapshot -->
+    <section class="max-w-5xl mx-auto px-6 py-12 border-y">
+        <h2 class="text-3xl tracking-tight font-semibold mb-8">Summerlin Market Snapshot – June 2026</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Median Sale Price</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">$685,000</div>
+                <div class="text-sm text-emerald-600 mt-1">+1.8% year-over-year</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Avg. Days on Market</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">~38–48 days</div>
+                <div class="text-sm text-emerald-600 mt-1">Strong demand in desirable sections</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Housing Inventory</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">Low to Balanced</div>
+                <div class="text-sm text-emerald-600 mt-1">Premium sections move quickly</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Clark County Population (2026 Est.)</div>
+                <div class="text-4xl font-semibold tracking-tighter mt-1">~2.5 million</div>
+                <div class="text-sm text-emerald-600 mt-1">+1.7% annual growth</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Major Employment Sectors</div>
+                <div class="text-lg font-medium mt-1">Healthcare, professional services, tourism, retail</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-6">
+                <div class="text-sm text-slate-500">Market Note</div>
+                <div class="text-lg font-medium mt-1">Summerlin continues to command a premium due to its master-planned amenities and proximity to Red Rock Canyon.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neighborhoods -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-4xl tracking-tight font-semibold mb-8">Neighborhoods in Summerlin</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 text-lg">
+            <div>
+                <h3 class="font-semibold text-xl mb-3">The Ridges &amp; The Summit</h3>
+                <p class="text-slate-600">Upscale custom and semi-custom home communities with larger lots and premium views. Popular with buyers seeking higher-end properties.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Summerlin South &amp; The Pueblo</h3>
+                <p class="text-slate-600">Family-friendly sections with a mix of single-family homes, townhomes, and strong community amenities including parks and trails.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Downtown Summerlin</h3>
+                <p class="text-slate-600">The vibrant core of the community featuring shopping, dining, entertainment, and the Red Rock Resort. Offers a more urban-suburban lifestyle.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Other Areas</h3>
+                <p class="text-slate-600">Summerlin includes many distinct villages and neighborhoods, each with its own character, amenities, and housing styles ranging from luxury to more moderately priced options.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Estate Market -->
     <section class="bg-slate-50 py-16">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-4xl tracking-tight font-semibold mb-8">Financing Options in Summerlin</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="font-semibold text-xl mb-4">Common Loan Types</h3>
-                    <ul class="space-y-2 text-lg">
-                        <li>Conventional and Jumbo loans for higher-value homes</li>
-                        <li>VA loans for eligible veterans</li>
-                        <li>Refinance options for current Summerlin homeowners</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-xl mb-4">Derek’s Expertise</h3>
-                    <p class="text-slate-600">Derek understands the nuances of financing in master-planned communities like Summerlin and helps clients navigate appraisals, HOA considerations, and competitive bidding situations.</p>
-                </div>
+            <h2 class="text-4xl tracking-tight font-semibold mb-6">Real Estate Market in Summerlin</h2>
+            <div class="prose prose-slate max-w-none text-lg">
+                <p>Summerlin has historically maintained strong demand and relatively resilient pricing compared to the broader Las Vegas Valley. The community’s master-planned amenities, proximity to Red Rock Canyon, and high-quality schools contribute to its appeal among move-up buyers and professionals.</p>
+                
+                <p class="mt-4">The market in Summerlin tends to feature a mix of newer construction and established neighborhoods. Desirable sections with golf course views or proximity to Downtown Summerlin often move faster and command higher prices.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Schools & Lifestyle -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-4xl tracking-tight font-semibold mb-8">Schools, Parks &amp; Lifestyle</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 text-lg">
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Education &amp; Amenities</h3>
+                <p class="text-slate-600">Summerlin is served by highly regarded schools and offers extensive community amenities including over 230 parks, numerous trails, golf courses, and the Red Rock Resort. The community is designed with an emphasis on outdoor living and recreation.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-3">Lifestyle</h3>
+                <p class="text-slate-600">Residents enjoy easy access to Red Rock Canyon for hiking and outdoor activities, along with upscale shopping and dining at Downtown Summerlin. The community maintains a polished, resort-style atmosphere while fostering a strong sense of neighborhood connection.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proximity -->
+    <section class="bg-slate-50 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl tracking-tight font-semibold mb-6">Location &amp; Accessibility</h2>
+            <div class="prose prose-slate max-w-none text-lg">
+                <p>Summerlin is located approximately 20–25 minutes from the Las Vegas Strip and offers convenient access to major highways. Its western location provides quick access to Red Rock Canyon while still being within a reasonable commute to employment centers throughout the Las Vegas Valley.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financing -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-4xl tracking-tight font-semibold mb-6">Financing Considerations in Summerlin</h2>
+        <div class="prose prose-slate max-w-none text-lg">
+            <p>Derek Lapikas works with many buyers purchasing homes in Summerlin. The area’s higher price points and mix of custom, semi-custom, and production homes mean buyers often explore a variety of financing options, including jumbo loans for higher-value properties.</p>
+            
+            <p class="mt-4">Whether buying in established villages or newer sections of Summerlin, Derek helps clients navigate current lending guidelines and structure financing that aligns with their goals.</p>
         </div>
     </section>
 
     <!-- FAQ -->
-    <section class="max-w-5xl mx-auto px-6 py-16">
-        <h2 class="text-4xl tracking-tight font-semibold mb-8">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-            <div class="border border-slate-200 rounded-2xl p-6">
-                <div class="font-semibold">Are jumbo loans common in Summerlin?</div>
-                <div class="mt-2 text-slate-600">Yes. Many homes in Summerlin exceed conforming loan limits, making jumbo financing a frequent option.</div>
-            </div>
-            <div class="border border-slate-200 rounded-2xl p-6">
-                <div class="font-semibold">How competitive is the Summerlin market?</div>
-                <div class="mt-2 text-slate-600">Summerlin remains desirable. Having a strong pre-approval from Derek gives you an advantage.</div>
+    <section class="bg-slate-50 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl tracking-tight font-semibold mb-8">Frequently Asked Questions About Summerlin</h2>
+            
+            <div class="space-y-4">
+                <div class="border border-slate-200 rounded-2xl p-6">
+                    <div class="font-semibold text-lg">How far is Summerlin from the Las Vegas Strip?</div>
+                    <div class="mt-2 text-slate-600">Most parts of Summerlin are approximately 20–25 minutes from the Las Vegas Strip, depending on traffic and the specific village.</div>
+                </div>
+                
+                <div class="border border-slate-200 rounded-2xl p-6">
+                    <div class="font-semibold text-lg">What makes Summerlin different from other areas in Las Vegas?</div>
+                    <div class="mt-2 text-slate-600">Summerlin is a large master-planned community with extensive amenities, parks, golf courses, and a strong emphasis on community planning and quality of life.</div>
+                </div>
+                
+                <div class="border border-slate-200 rounded-2xl p-6">
+                    <div class="font-semibold text-lg">Is Summerlin a good area for buyers seeking newer homes?</div>
+                    <div class="mt-2 text-slate-600">Yes. Summerlin continues to see new development in various villages, offering a range of newer construction options alongside established neighborhoods.</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Internal Links & CTA -->
-    <section class="max-w-5xl mx-auto px-6 py-12 border-t">
-        <h3 class="font-semibold mb-4">Explore More</h3>
-        <div class="flex flex-wrap gap-x-6 text-sky-600">
-            <a href="../loan-programs/jumbo-loans-nevada.html" class="hover:underline">Jumbo Loans Nevada</a>
-            <a href="las-vegas-mortgage-lender.html" class="hover:underline">Las Vegas Mortgage Lender</a>
-        </div>
-    </section>
-
+    <!-- CTA -->
     <section class="bg-slate-950 text-white py-16">
         <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-4xl tracking-tight font-semibold mb-4">Ready to buy or refinance in Summerlin?</h2>
-            <a href="../index.html#consultation" class="inline-flex px-9 py-4 bg-white text-slate-900 font-semibold rounded-2xl">Schedule Consultation with Derek</a>
+            <h2 class="text-4xl tracking-tight font-semibold mb-4">Considering a home in Summerlin?</h2>
+            <p class="text-xl text-white/80 mb-8">Derek Lapikas can help you understand your financing options in the Summerlin area.</p>
+            <button onclick="openModal()" class="inline-flex px-9 py-4 bg-white text-slate-900 font-semibold rounded-2xl text-lg">Schedule a Consultation</button>
         </div>
     </section>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Derek Lapikas - Summerlin Mortgage Lender",
-      "address": {"@type": "PostalAddress", "addressLocality": "Las Vegas", "addressRegion": "NV"}
-    }
+    <!-- Consultation Modal -->
+    <div id="consultation-modal" onclick="if (event.target.id === 'consultation-modal') closeModal()" class="hidden fixed inset-0 bg-black bg-opacity-50 z-[999] flex items-center justify-center p-4">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white rounded-3xl max-w-lg w-full p-8 relative">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-times text-2xl"></i>
+            </button>
+
+            <h3 class="text-3xl font-semibold tracking-tight mb-2">Schedule a Consultation</h3>
+            <p class="text-slate-600 mb-6">Fill out the form below and Derek will personally follow up within 24 hours.</p>
+
+            <form name="consultation" method="POST" data-netlify="true" class="space-y-5">
+                <input type="hidden" name="form-name" value="consultation">
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">Full Name</label>
+                    <input type="text" name="name" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Phone Number</label>
+                        <input type="tel" name="phone" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Email Address</label>
+                        <input type="email" name="email" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">What are you looking for?</label>
+                    <select name="interest" class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                        <option>Purchasing a home in Nevada</option>
+                        <option>Refinancing my current home</option>
+                        <option>VA Loan options</option>
+                        <option>Just exploring my options</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full bg-slate-900 hover:bg-black text-white font-semibold py-4 rounded-2xl text-lg transition-all mt-2">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            const modal = document.getElementById('consultation-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('consultation-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = menuBtn.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+        }
     </script>
 </body>
 </html>
