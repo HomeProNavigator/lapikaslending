@@ -299,5 +299,14 @@
         }
     </script>
 
+    <!-- Footer Injection Script -->
+<script>
+    fetch('/includes/footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+</script>
+
 </body>
 </html>
