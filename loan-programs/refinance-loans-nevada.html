@@ -3,177 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refinance Loans Nevada 2026 | Derek Lapikas | Modern Lending</title>
-    <meta name="description" content="Expert refinance guidance in Las Vegas and Henderson. Derek Lapikas helps Nevada homeowners with both rate & term refinancing and cash-out refinance options.">
+    <title>Refinance Loans Nevada | Derek Lapikas | Modern Lending</title>
+    <meta name="description" content="Refinance options in Nevada including Rate & Term, Cash-Out, and VA IRRRL. See how much you could save.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="bg-white text-slate-800">
 
-    <!-- Navbar -->
-    <nav class="bg-white border-b sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
-            <!-- Logo -->
-            <a href="../index.html">
-                <div class="flex items-center gap-x-3">
-                    <img src="../modernlending.jpg" alt="Modern Lending Logo" class="h-10 w-auto">
-                    <div>
-                        <div class="font-semibold text-2xl tracking-tight">Modern Lending</div>
-                        <div class="text-[10px] text-sky-600 font-medium -mt-1">NEVADA • DEREK LAPIKAS</div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Desktop Nav -->
-            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
-                <a href="../index.html#meet-derek" class="hover:text-sky-600">Meet Derek</a>
-                <a href="../index.html#programs" class="hover:text-sky-600">Loan Programs</a>
-                <a href="../index.html#locations" class="hover:text-sky-600">Locations</a>
-                <a href="../index.html#tools" class="hover:text-sky-600">Tools</a>
-            </div>
-
-            <!-- Desktop CTA -->
-            <div class="hidden md:flex items-center gap-x-4">
-                <a href="tel:7024601077" class="text-sm font-medium hover:text-sky-600">(702) 460-1077</a>
-                <a href="../index.html#consultation" class="px-6 py-2.5 bg-slate-900 hover:bg-black text-white text-sm font-semibold rounded-2xl transition-all">
-                    Schedule Consultation
-                </a>
-            </div>
-
-            <!-- Mobile Hamburger -->
-            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
-                <i class="fa-solid fa-bars text-2xl"></i>
-            </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-6 py-6 space-y-4 text-sm font-medium">
-                <a href="../index.html#meet-derek" class="block py-2 hover:text-sky-600">Meet Derek</a>
-                <a href="../index.html#programs" class="block py-2 hover:text-sky-600">Loan Programs</a>
-                <a href="../index.html#locations" class="block py-2 hover:text-sky-600">Locations</a>
-                <a href="../index.html#tools" class="block py-2 hover:text-sky-600">Tools</a>
-                <div class="pt-4 border-t">
-                    <a href="tel:7024601077" class="block py-2 text-sky-600 font-medium">(702) 460-1077</a>
-                    <a href="../index.html#consultation" class="mt-3 block w-full text-center px-6 py-3 bg-slate-900 text-white font-semibold rounded-2xl">
-                        Schedule Consultation
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
+    <!-- Navbar loaded dynamically -->
+    
     <!-- Hero -->
     <header class="bg-slate-950 text-white py-16">
         <div class="max-w-5xl mx-auto px-6 text-center">
             <h1 class="text-6xl tracking-tighter font-semibold">Refinance Loans in Nevada</h1>
-            <p class="mt-4 text-2xl text-white/90">Lower your rate, shorten your term, or access your home equity with expert guidance from Derek Lapikas.</p>
+            <p class="mt-4 text-2xl text-white/90">Lower your rate, access equity, or streamline your VA loan with expert guidance.</p>
         </div>
     </header>
 
     <!-- Tabs -->
     <div class="max-w-5xl mx-auto px-6 pt-12">
-        <div class="flex border-b mb-8">
-            <button onclick="showTab(0)" class="tab-button px-8 py-4 font-semibold border-b-2 border-sky-600 text-sky-600" id="tab-0">
+        <div class="flex border-b mb-8 overflow-x-auto">
+            <button onclick="showTab(0)" class="tab-button px-6 md:px-8 py-4 font-semibold border-b-2 border-sky-600 text-sky-600 whitespace-nowrap" id="tab-0">
                 Rate & Term Refinance
             </button>
-            <button onclick="showTab(1)" class="tab-button px-8 py-4 font-semibold text-slate-600 hover:text-slate-900" id="tab-1">
+            <button onclick="showTab(1)" class="tab-button px-6 md:px-8 py-4 font-semibold text-slate-600 hover:text-slate-900 whitespace-nowrap" id="tab-1">
                 Cash-Out Refinance
+            </button>
+            <button onclick="showTab(2)" class="tab-button px-6 md:px-8 py-4 font-semibold text-slate-600 hover:text-slate-900 whitespace-nowrap" id="tab-2">
+                VA IRRRL
             </button>
         </div>
 
-        <!-- Rate & Term Content -->
+        <!-- Tab 0: Rate & Term -->
         <div id="content-0" class="tab-content">
             <h2 class="text-4xl tracking-tight font-semibold mb-6">Rate & Term Refinance</h2>
             <div class="prose prose-slate max-w-none text-lg">
-                <p>Rate and term refinancing allows you to replace your current mortgage with a new one at a lower interest rate or with a different loan term. This is the most common type of refinance and does not involve taking cash out of your home.</p>
+                <p>Rate and term refinancing allows you to replace your current mortgage with a new one at a lower interest rate or with a different loan term. This is the most common type of refinance.</p>
             </div>
-
-            <div class="grid md:grid-cols-2 gap-8 mt-8">
-                <div>
-                    <h3 class="font-semibold text-xl mb-4 text-emerald-600">Benefits</h3>
-                    <ul class="space-y-2 text-lg">
-                        <li>Lower monthly mortgage payment</li>
-                        <li>Reduce total interest paid over time</li>
-                        <li>Shorten your loan term (e.g., 30 to 15 years)</li>
-                        <li>Switch from an adjustable-rate to a fixed-rate loan</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-xl mb-4 text-red-600">Considerations</h3>
-                    <ul class="space-y-2 text-lg">
-                        <li>Closing costs typically apply</li>
-                        <li>You need sufficient home equity</li>
-                        <li>The rate must be low enough to justify costs</li>
-                    </ul>
-                </div>
-            </div>
+            <!-- Add more content as needed -->
         </div>
 
-        <!-- Cash-Out Content -->
+        <!-- Tab 1: Cash-Out -->
         <div id="content-1" class="tab-content hidden">
             <h2 class="text-4xl tracking-tight font-semibold mb-6">Cash-Out Refinance</h2>
             <div class="prose prose-slate max-w-none text-lg">
-                <p>Cash-out refinancing lets you replace your current mortgage with a larger loan and receive the difference in cash. This is useful if you want to access your home’s equity for renovations, debt consolidation, education, or other major expenses.</p>
+                <p>Cash-out refinancing lets you replace your current mortgage with a larger loan and receive the difference in cash. Useful for home improvements, debt consolidation, or major expenses.</p>
+            </div>
+        </div>
+
+        <!-- Tab 2: VA IRRRL -->
+        <div id="content-2" class="tab-content hidden">
+            <h2 class="text-4xl tracking-tight font-semibold mb-6">VA IRRRL (Streamline Refinance)</h2>
+            
+            <div class="prose prose-slate max-w-none text-lg mb-8">
+                <p>The <strong>VA Interest Rate Reduction Refinance Loan (IRRRL)</strong> is a streamlined refinance available only to veterans who already have an existing VA loan. It’s designed to help you lower your interest rate or switch from an ARM to a fixed-rate loan with minimal paperwork.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 mt-8">
-                <div>
-                    <h3 class="font-semibold text-xl mb-4 text-emerald-600">Benefits</h3>
-                    <ul class="space-y-2 text-lg">
-                        <li>Access home equity as cash</li>
-                        <li>Fund home improvements or renovations</li>
-                        <li>Consolidate high-interest debt</li>
-                        <li>Potentially lower your overall interest rate</li>
-                    </ul>
+            <!-- VA IRRRL Calculator -->
+            <div class="bg-white border border-slate-200 rounded-3xl p-8 mb-8">
+                <h3 class="text-2xl font-semibold mb-6">Estimate Your VA IRRRL Savings</h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-600 mb-1">Current Loan Balance</label>
+                            <input id="balance" type="number" value="380000" class="w-full px-4 py-3 border border-slate-300 rounded-2xl">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-600 mb-1">Current Interest Rate (%)</label>
+                            <input id="currentRate" type="number" step="0.01" value="6.75" class="w-full px-4 py-3 border border-slate-300 rounded-2xl">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-600 mb-1">New Interest Rate (%)</label>
+                            <input id="newRate" type="number" step="0.01" value="5.75" class="w-full px-4 py-3 border border-slate-300 rounded-2xl">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-600 mb-1">Remaining Term (Years)</label>
+                            <input id="remainingYears" type="number" value="25" class="w-full px-4 py-3 border border-slate-300 rounded-2xl">
+                        </div>
+                        <button onclick="calculateIRRRL()" class="w-full bg-slate-900 text-white py-3 rounded-2xl font-semibold">Calculate Savings</button>
+                    </div>
+
+                    <div id="irrrl-results" class="hidden bg-slate-50 border border-slate-200 rounded-3xl p-6">
+                        <div class="mb-4">
+                            <div class="text-sm text-slate-500">NEW MONTHLY PAYMENT</div>
+                            <div id="newPayment" class="text-4xl font-semibold text-emerald-600"></div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm text-slate-500">MONTHLY SAVINGS</div>
+                            <div id="monthlySavings" class="text-4xl font-semibold text-emerald-600"></div>
+                        </div>
+                        <div class="text-sm">
+                            <div class="flex justify-between"><span>Current Payment:</span> <span id="currentPayment"></span></div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="font-semibold text-xl mb-4 text-red-600">Considerations</h3>
-                    <ul class="space-y-2 text-lg">
-                        <li>Increases your total loan balance</li>
-                        <li>May result in higher monthly payments</li>
-                        <li>Requires more home equity</li>
-                    </ul>
-                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="va-irrrl-refinance.html" class="inline-flex items-center px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-semibold rounded-2xl text-lg">
+                    Go to Full VA IRRRL Page <i class="fa-solid fa-arrow-right ml-3"></i>
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- Combined FAQ -->
-    <div class="max-w-5xl mx-auto px-6 py-16">
-        <h2 class="text-4xl tracking-tight font-semibold mb-8">Frequently Asked Questions About Refinancing in Nevada</h2>
-        
-        <div class="space-y-4">
-            <div class="border border-slate-200 rounded-2xl p-6">
-                <div class="font-semibold text-lg">What’s the difference between rate & term and cash-out refinancing?</div>
-                <div class="mt-2 text-slate-600">Rate & term refinancing changes your interest rate or loan length without taking cash out. Cash-out refinancing gives you cash by increasing your loan balance.</div>
-            </div>
-            
-            <div class="border border-slate-200 rounded-2xl p-6">
-                <div class="font-semibold text-lg">When should I consider a cash-out refinance?</div>
-                <div class="mt-2 text-slate-600">Cash-out refinancing is often used for home renovations, debt consolidation, education expenses, or other large financial needs.</div>
-            </div>
-            
-            <div class="border border-slate-200 rounded-2xl p-6">
-                <div class="font-semibold text-lg">How much can I cash out when refinancing in Nevada?</div>
-                <div class="mt-2 text-slate-600">Most lenders allow you to cash out up to 80% of your home’s appraised value, though this can vary.</div>
-            </div>
-            
-            <div class="border border-slate-200 rounded-2xl p-6">
-                <div class="font-semibold text-lg">Do I have to pay closing costs when refinancing?</div>
-                <div class="mt-2 text-slate-600">Yes. However, many borrowers roll closing costs into the new loan or choose a no-closing-cost refinance option.</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="max-w-3xl mx-auto px-6 py-12 text-center border-t">
-        <h2 class="text-4xl tracking-tight font-semibold mb-4">Not sure which refinance option is right for you?</h2>
-        <p class="text-xl text-slate-600 mb-8">Derek Lapikas can review your current loan and help you choose the best path.</p>
-        <a href="../index.html#consultation" class="inline-flex px-9 py-4 bg-slate-900 text-white font-semibold rounded-2xl text-lg">Schedule a Consultation with Derek</a>
-    </div>
-
+    <!-- Scripts -->
     <script>
+        // Load Navbar
+        fetch('/includes/navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+        // Load Footer
+        fetch('/includes/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            });
+
         function showTab(tabIndex) {
             document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
             document.querySelectorAll('.tab-button').forEach(el => {
@@ -187,31 +137,31 @@
             activeBtn.classList.remove('text-slate-600');
         }
 
-        // Mobile Menu
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        if (menuBtn && mobileMenu) {
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                const icon = menuBtn.querySelector('i');
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-times');
-            });
+        function calculateIRRRL() {
+            const balance = parseFloat(document.getElementById('balance').value);
+            const currentRate = parseFloat(document.getElementById('currentRate').value) / 100 / 12;
+            const newRate = parseFloat(document.getElementById('newRate').value) / 100 / 12;
+            const years = parseFloat(document.getElementById('remainingYears').value);
+            const months = years * 12;
+
+            function monthlyPayment(rate, nper, pv) {
+                if (rate === 0) return pv / nper;
+                return pv * rate * Math.pow(1 + rate, nper) / (Math.pow(1 + rate, nper) - 1);
+            }
+
+            const currentPayment = monthlyPayment(currentRate, months, balance);
+            const newPayment = monthlyPayment(newRate, months, balance);
+            const monthlySavings = currentPayment - newPayment;
+
+            document.getElementById('currentPayment').innerHTML = '$' + currentPayment.toFixed(0).toLocaleString();
+            document.getElementById('newPayment').innerHTML = '$' + newPayment.toFixed(0).toLocaleString();
+            document.getElementById('monthlySavings').innerHTML = '$' + monthlySavings.toFixed(0).toLocaleString();
+
+            document.getElementById('irrrl-results').classList.remove('hidden');
         }
 
         // Show first tab by default
         document.getElementById('content-0').classList.remove('hidden');
     </script>
-
-    <!-- Footer Injection Script -->
-<script>
-    fetch('/includes/footer.html')
-        .then(res => res.text())
-        .then(data => {
-            document.body.insertAdjacentHTML('beforeend', data);
-        });
-</script>
-    
 </body>
 </html>
