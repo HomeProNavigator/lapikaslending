@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refinance Loans Nevada | Derek Lapikas | Modern Lending</title>
-    <meta name="description" content="Refinance options in Nevada including Rate & Term, Cash-Out, and VA IRRRL. See how much you could save.">
+    <meta name="description" content="Refinance options in Nevada including Rate & Term, Cash-Out, and VA IRRRL. See how much you could save with expert guidance from Derek Lapikas.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="bg-white text-slate-800">
 
     <!-- Navbar loaded dynamically -->
-    
+
     <!-- Hero -->
     <header class="bg-slate-950 text-white py-16">
         <div class="max-w-5xl mx-auto px-6 text-center">
@@ -34,20 +34,59 @@
             </button>
         </div>
 
-        <!-- Tab 0: Rate & Term -->
+        <!-- Tab 0: Rate & Term Refinance -->
         <div id="content-0" class="tab-content">
             <h2 class="text-4xl tracking-tight font-semibold mb-6">Rate & Term Refinance</h2>
             <div class="prose prose-slate max-w-none text-lg">
-                <p>Rate and term refinancing allows you to replace your current mortgage with a new one at a lower interest rate or with a different loan term. This is the most common type of refinance.</p>
+                <p>Rate and term refinancing allows you to replace your current mortgage with a new one at a lower interest rate or with a different loan term. This is the most common type of refinance and does not involve taking cash out of your home.</p>
             </div>
-            <!-- Add more content as needed -->
+
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+                <div>
+                    <h3 class="font-semibold text-xl mb-4 text-emerald-600">Benefits</h3>
+                    <ul class="space-y-2 text-lg">
+                        <li>Lower monthly mortgage payment</li>
+                        <li>Reduce total interest paid over time</li>
+                        <li>Shorten your loan term (e.g., 30 to 15 years)</li>
+                        <li>Switch from an adjustable-rate to a fixed-rate loan</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-4 text-red-600">Considerations</h3>
+                    <ul class="space-y-2 text-lg">
+                        <li>Closing costs typically apply</li>
+                        <li>You need sufficient home equity</li>
+                        <li>The rate must be low enough to justify costs</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <!-- Tab 1: Cash-Out -->
+        <!-- Tab 1: Cash-Out Refinance -->
         <div id="content-1" class="tab-content hidden">
             <h2 class="text-4xl tracking-tight font-semibold mb-6">Cash-Out Refinance</h2>
             <div class="prose prose-slate max-w-none text-lg">
-                <p>Cash-out refinancing lets you replace your current mortgage with a larger loan and receive the difference in cash. Useful for home improvements, debt consolidation, or major expenses.</p>
+                <p>Cash-out refinancing lets you replace your current mortgage with a larger loan and receive the difference in cash. This is useful if you want to access your home’s equity for renovations, debt consolidation, education, or other major expenses.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+                <div>
+                    <h3 class="font-semibold text-xl mb-4 text-emerald-600">Benefits</h3>
+                    <ul class="space-y-2 text-lg">
+                        <li>Access home equity as cash</li>
+                        <li>Fund home improvements or renovations</li>
+                        <li>Consolidate high-interest debt</li>
+                        <li>Potentially lower your overall interest rate</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-4 text-red-600">Considerations</h3>
+                    <ul class="space-y-2 text-lg">
+                        <li>Increases your total loan balance</li>
+                        <li>May result in higher monthly payments</li>
+                        <li>Requires more home equity</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -59,7 +98,7 @@
                 <p>The <strong>VA Interest Rate Reduction Refinance Loan (IRRRL)</strong> is a streamlined refinance available only to veterans who already have an existing VA loan. It’s designed to help you lower your interest rate or switch from an ARM to a fixed-rate loan with minimal paperwork.</p>
             </div>
 
-            <!-- VA IRRRL Calculator -->
+            <!-- VA IRRRL Calculator (Corrected - 30 Year Term) -->
             <div class="bg-white border border-slate-200 rounded-3xl p-8 mb-8">
                 <h3 class="text-2xl font-semibold mb-6">Estimate Your VA IRRRL Savings</h3>
                 
@@ -77,10 +116,11 @@
                             <label class="block text-sm font-medium text-slate-600 mb-1">New Interest Rate (%)</label>
                             <input id="newRate" type="number" step="0.01" value="5.75" class="w-full px-4 py-3 border border-slate-300 rounded-2xl">
                         </div>
-                        <div>
-                            <label class="block text-sm font-medium text-slate-600 mb-1">Remaining Term (Years)</label>
-                            <input id="remainingYears" type="number" value="25" class="w-full px-4 py-3 border border-slate-300 rounded-2xl">
+                        
+                        <div class="bg-slate-50 p-4 rounded-2xl text-sm text-slate-600">
+                            <strong>Note:</strong> VA IRRRLs typically reset to a new <strong>30-year term</strong>.
                         </div>
+                        
                         <button onclick="calculateIRRRL()" class="w-full bg-slate-900 text-white py-3 rounded-2xl font-semibold">Calculate Savings</button>
                     </div>
 
@@ -141,8 +181,10 @@
             const balance = parseFloat(document.getElementById('balance').value);
             const currentRate = parseFloat(document.getElementById('currentRate').value) / 100 / 12;
             const newRate = parseFloat(document.getElementById('newRate').value) / 100 / 12;
-            const years = parseFloat(document.getElementById('remainingYears').value);
-            const months = years * 12;
+            
+            // VA IRRRL resets to a new 30-year term
+            const newYears = 30;
+            const months = newYears * 12;
 
             function monthlyPayment(rate, nper, pv) {
                 if (rate === 0) return pv / nper;
