@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VA IRRRL Refinance | Lower Your VA Loan Rate | Derek Lapikas</title>
+    <meta name="description" content="VA IRRRL (Interest Rate Reduction Refinance Loan) — The easiest way for veterans to lower their VA mortgage rate with minimal paperwork. See how much you could save.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-white text-slate-800">
+
+    <!-- Navbar is loaded dynamically via script at the bottom -->
+
+    <!-- Hero -->
+    <header class="bg-slate-950 text-white py-16">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-x-2 bg-white/10 px-4 py-1.5 rounded-full text-sm mb-6">
+                <span>Exclusively for Veterans with Existing VA Loans</span>
+            </div>
+            <h1 class="text-6xl tracking-tighter font-semibold">VA IRRRL Refinance</h1>
+            <p class="mt-4 text-2xl text-white/90">The easiest way to lower your VA loan rate with minimal paperwork and little to no out-of-pocket costs.</p>
+        </div>
+    </header>
+
+    <!-- What is VA IRRRL -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-4xl tracking-tight font-semibold mb-6">What is a VA IRRRL?</h2>
+        <div class="prose prose-slate max-w-none text-lg">
+            <p>The <strong>VA Interest Rate Reduction Refinance Loan (IRRRL)</strong>, also known as a VA Streamline Refinance, is a special refinance program available only to veterans, active-duty service members, and eligible surviving spouses who already have an existing VA-backed home loan.</p>
+            
+            <p class="mt-4">Its purpose is simple: help you lower your interest rate or switch from an adjustable-rate mortgage (ARM) to a more stable fixed-rate loan with significantly less hassle than a traditional refinance.</p>
+        </div>
+    </section>
+
+    <!-- Key Advantages -->
+    <section class="bg-slate-50 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl tracking-tight font-semibold mb-10 text-center">Key Advantages of a VA IRRRL</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-8 rounded-3xl border">
+                    <div class="flex items-center gap-x-4 mb-4">
+                        <i class="fa-solid fa-file-invoice-dollar text-3xl text-sky-600"></i>
+                        <h3 class="text-2xl font-semibold">Minimal Paperwork</h3>
+                    </div>
+                    <p class="text-slate-600">No income verification or credit check is typically required. The process is much faster and simpler than a regular refinance.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl border">
+                    <div class="flex items-center gap-x-4 mb-4">
+                        <i class="fa-solid fa-home text-3xl text-sky-600"></i>
+                        <h3 class="text-2xl font-semibold">No Appraisal Needed</h3>
+                    </div>
+                    <p class="text-slate-600">In most cases, you do not need a home appraisal, which saves time and money.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl border">
+                    <div class="flex items-center gap-x-4 mb-4">
+                        <i class="fa-solid fa-wallet text-3xl text-sky-600"></i>
+                        <h3 class="text-2xl font-semibold">Low or No Out-of-Pocket Costs</h3>
+                    </div>
+                    <p class="text-slate-600">Closing costs can usually be rolled into your new loan balance so you don’t have to bring cash to closing.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl border">
+                    <div class="flex items-center gap-x-4 mb-4">
+                        <i class="fa-solid fa-percent text-3xl text-sky-600"></i>
+                        <h3 class="text-2xl font-semibold">Lower VA Funding Fee</h3>
+                    </div>
+                    <p class="text-slate-600">Only a 0.5% VA funding fee applies (significantly lower than standard VA loans).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IRRRL Savings Calculator -->
+    <section class="max-w-4xl mx-auto px-6 py-16">
+        <div class="text-center mb-10">
+            <h2 class="text-4xl tracking-tight font-semibold">See How Much You Could Save</h2>
+            <p class="mt-3 text-xl text-slate-600">Enter your current loan details to estimate your new payment with a VA IRRRL.</p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-3xl p-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Inputs -->
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">Current Loan Balance</label>
+                        <div class="relative">
+                            <span class="absolute left-4 top-3 text-slate-400">$</span>
+                            <input id="balance" type="number" value="380000" class="w-full pl-8 pr-4 py-3 border border-slate-300 rounded-2xl text-lg">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">Current Interest Rate (%)</label>
+                        <input id="currentRate" type="number" step="0.01" value="6.75" class="w-full px-4 py-3 border border-slate-300 rounded-2xl text-lg">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">New Interest Rate (%)</label>
+                        <input id="newRate" type="number" step="0.01" value="5.75" class="w-full px-4 py-3 border border-slate-300 rounded-2xl text-lg">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-2">Remaining Loan Term (Years)</label>
+                        <input id="remainingYears" type="number" value="25" class="w-full px-4 py-3 border border-slate-300 rounded-2xl text-lg">
+                    </div>
+                    
+                    <button onclick="calculateIRRRL()" class="w-full bg-slate-900 text-white py-4 rounded-2xl font-semibold text-lg">Calculate My Savings</button>
+                </div>
+
+                <!-- Results -->
+                <div id="results" class="hidden bg-slate-50 border border-slate-200 rounded-3xl p-8">
+                    <div class="mb-6">
+                        <div class="text-sm text-slate-500">NEW MONTHLY PAYMENT</div>
+                        <div id="newPayment" class="text-5xl font-semibold text-emerald-600 tracking-tighter"></div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="text-sm text-slate-500">MONTHLY SAVINGS</div>
+                        <div id="monthlySavings" class="text-5xl font-semibold text-emerald-600 tracking-tighter"></div>
+                    </div>
+
+                    <div class="text-sm space-y-2 border-t pt-4">
+                        <div class="flex justify-between"><span>Current Monthly Payment</span> <span id="currentPayment" class="font-medium"></span></div>
+                        <div class="flex justify-between"><span>Interest Saved Over Remaining Term</span> <span id="interestSavings" class="font-medium text-emerald-600"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-slate-950 text-white py-16">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-4xl tracking-tighter font-semibold mb-4">Ready to lower your VA loan rate?</h2>
+            <p class="text-xl text-white/80 mb-8">Derek Lapikas specializes in helping veterans with VA IRRRL refinances. Let’s run your numbers today.</p>
+            <button onclick="openModal()" class="inline-flex px-9 py-4 bg-white text-slate-900 font-semibold rounded-2xl text-lg">Schedule Your Free IRRRL Review</button>
+        </div>
+    </section>
+
+    <!-- Consultation Modal -->
+    <div id="consultation-modal" onclick="if (event.target.id === 'consultation-modal') closeModal()" class="hidden fixed inset-0 bg-black bg-opacity-50 z-[999] flex items-center justify-center p-4">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white rounded-3xl max-w-lg w-full p-8 relative">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-times text-2xl"></i>
+            </button>
+
+            <h3 class="text-3xl font-semibold tracking-tight mb-2">Schedule Your VA IRRRL Review</h3>
+            <p class="text-slate-600 mb-6">Fill out the form below and Derek will personally follow up within 24 hours.</p>
+
+            <form name="consultation" method="POST" data-netlify="true" class="space-y-5">
+                <input type="hidden" name="form-name" value="consultation">
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">Full Name</label>
+                    <input type="text" name="name" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Phone Number</label>
+                        <input type="tel" name="phone" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Email Address</label>
+                        <input type="email" name="email" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">What are you looking for?</label>
+                    <select name="interest" class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                        <option>VA IRRRL Refinance</option>
+                        <option>Lower my VA loan rate</option>
+                        <option>Switch from ARM to Fixed</option>
+                        <option>Just exploring my options</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full bg-slate-900 hover:bg-black text-white font-semibold py-4 rounded-2xl text-lg transition-all mt-2">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Load Navbar
+        fetch('/includes/navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+        // Load Footer
+        fetch('/includes/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            });
+
+        // IRRRL Calculator
+        function calculateIRRRL() {
+            const balance = parseFloat(document.getElementById('balance').value);
+            const currentRate = parseFloat(document.getElementById('currentRate').value) / 100 / 12;
+            const newRate = parseFloat(document.getElementById('newRate').value) / 100 / 12;
+            const years = parseFloat(document.getElementById('remainingYears').value);
+            const months = years * 12;
+
+            function monthlyPayment(rate, nper, pv) {
+                if (rate === 0) return pv / nper;
+                return pv * rate * Math.pow(1 + rate, nper) / (Math.pow(1 + rate, nper) - 1);
+            }
+
+            const currentPayment = monthlyPayment(currentRate, months, balance);
+            const newPayment = monthlyPayment(newRate, months, balance);
+            const monthlySavings = currentPayment - newPayment;
+            const totalInterestCurrent = (currentPayment * months) - balance;
+            const totalInterestNew = (newPayment * months) - balance;
+            const interestSavings = totalInterestCurrent - totalInterestNew;
+
+            document.getElementById('currentPayment').innerHTML = '$' + currentPayment.toFixed(0).toLocaleString();
+            document.getElementById('newPayment').innerHTML = '$' + newPayment.toFixed(0).toLocaleString();
+            document.getElementById('monthlySavings').innerHTML = '$' + monthlySavings.toFixed(0).toLocaleString();
+            document.getElementById('interestSavings').innerHTML = '$' + interestSavings.toFixed(0).toLocaleString();
+
+            document.getElementById('results').classList.remove('hidden');
+        }
+
+        function openModal() {
+            const modal = document.getElementById('consultation-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('consultation-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+    </script>
+
+</body>
+</html>
