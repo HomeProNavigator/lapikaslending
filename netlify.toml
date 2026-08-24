@@ -20,3 +20,28 @@
   from = "/apply"
   to = "/#quote"
   status = 301
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/locations/:slug.html"
+  to = "/locations/:slug"
+  status = 301
+
+[[redirects]]
+  from = "/loan-programs/:slug.html"
+  to = "/loan-programs/:slug"
+  status = 301
+
+[[redirects]]
+  from = "/calculators/:slug.html"
+  to = "/calculators/:slug"
+  status = 301
