@@ -11,15 +11,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# Netlify Forms (already set up in index.html)
 [forms]
-  # Optional: You can add form notifications here later
-
-# Optional redirects (example)
-[[redirects]]
-  from = "/apply"
-  to = "/#quote"
-  status = 301
 
 [[headers]]
   for = "/sitemap.xml"
@@ -27,21 +19,198 @@
     Content-Type = "application/xml; charset=utf-8"
 
 [[redirects]]
-  from = "/index.html"
-  to = "/"
+  from = "/apply"
+  to = "/#quote"
   status = 301
 
 [[redirects]]
-  from = "/locations/:slug.html"
-  to = "/locations/:slug"
+  from = "/pre-approval"
+  to = "/#quote"
   status = 301
+
+[[redirects]]
+  from = "/va-loans-las-vegas"
+  to = "/loan-programs/va-loans-nevada"
+  status = 301
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+# Short city URLs that have no file (pretty-urls + :slug.html caused a loop to /locations/:slug).
+[[redirects]]
+  from = "/locations/henderson"
+  to = "/locations/henderson-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/henderson.html"
+  to = "/locations/henderson-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/summerlin"
+  to = "/locations/summerlin-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/summerlin.html"
+  to = "/locations/summerlin-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/las-vegas"
+  to = "/locations/las-vegas-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/las-vegas.html"
+  to = "/locations/las-vegas-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/green-valley"
+  to = "/locations/green-valley-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/green-valley.html"
+  to = "/locations/green-valley-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/inspirada"
+  to = "/locations/inspirada-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/inspirada.html"
+  to = "/locations/inspirada-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/anthem"
+  to = "/locations/anthem-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/anthem.html"
+  to = "/locations/anthem-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/north-las-vegas"
+  to = "/locations/north-las-vegas-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/north-las-vegas.html"
+  to = "/locations/north-las-vegas-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/boulder-city"
+  to = "/locations/boulder-city-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/boulder-city.html"
+  to = "/locations/boulder-city-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/pahrump"
+  to = "/locations/pahrump-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/pahrump.html"
+  to = "/locations/pahrump-mortgage-lender"
+  status = 301
+  force = true
+
+# Real money-page .html files → pretty URL (force so GSC does not keep both).
+[[redirects]]
+  from = "/locations/henderson-mortgage-lender.html"
+  to = "/locations/henderson-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/summerlin-mortgage-lender.html"
+  to = "/locations/summerlin-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/las-vegas-mortgage-lender.html"
+  to = "/locations/las-vegas-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/green-valley-mortgage-lender.html"
+  to = "/locations/green-valley-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/inspirada-mortgage-lender.html"
+  to = "/locations/inspirada-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/anthem-mortgage-lender.html"
+  to = "/locations/anthem-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/north-las-vegas-mortgage-lender.html"
+  to = "/locations/north-las-vegas-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/boulder-city-mortgage-lender.html"
+  to = "/locations/boulder-city-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/pahrump-mortgage-lender.html"
+  to = "/locations/pahrump-mortgage-lender"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/loan-programs/:slug.html"
   to = "/loan-programs/:slug"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/calculators/:slug.html"
   to = "/calculators/:slug"
   status = 301
+  force = true
