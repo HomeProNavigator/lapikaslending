@@ -1,6 +1,11 @@
 [build]
   publish = "."
 
+[build.processing]
+  skip_processing = false
+[build.processing.html]
+  pretty_urls = true
+
 [build.environment]
   NODE_VERSION = "18"
 
@@ -11,12 +16,58 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# Netlify Forms (already set up in index.html)
-[forms]
-  # Optional: You can add form notifications here later
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
 
-# Optional redirects (example)
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
 [[redirects]]
   from = "/apply"
   to = "/#quote"
   status = 301
+
+[[redirects]]
+  from = "/loan-programs/va-loans-nevada.html"
+  to = "/loan-programs/va-loans-nevada"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-programs/first-time-home-buyer-nevada.html"
+  to = "/loan-programs/first-time-home-buyer-nevada"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/henderson-mortgage-lender.html"
+  to = "/locations/henderson-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/las-vegas-mortgage-lender.html"
+  to = "/locations/las-vegas-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/henderson"
+  to = "/locations/henderson-mortgage-lender"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/las-vegas"
+  to = "/locations/las-vegas-mortgage-lender"
+  status = 301
+  force = true
