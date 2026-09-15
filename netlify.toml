@@ -71,3 +71,21 @@
   to = "/locations/las-vegas-mortgage-lender"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://lapikaslending.netlify.app/*"
+  to = "https://nevadahomelender.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact"
+  status = 301
+  force = true

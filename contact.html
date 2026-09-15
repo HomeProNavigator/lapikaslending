@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Derek Lapikas | Nevada Mortgage | (702) 460-1077</title>
+    <meta name="description" content="Call Derek Lapikas, NMLS 1742770, at (702) 460-1077 or email info@modernlendingnv.com for Nevada VA, FHA, and conventional loans.">
+    <link rel="canonical" href="https://nevadahomelender.com/contact" />
+    <meta name="robots" content="index,follow" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-white text-slate-800">
+    <header class="bg-slate-950 text-white py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h1 class="text-5xl tracking-tighter font-semibold">Contact Derek Lapikas</h1>
+            <p class="mt-4 text-xl text-white/90">Loan officer, NMLS #1742770, Modern Lending Nevada NMLS #1865339.</p>
+        </div>
+    </header>
+
+    <section class="max-w-3xl mx-auto px-6 py-16">
+        <ul class="space-y-3 text-lg">
+            <li><strong>Phone:</strong> <a class="text-sky-600" href="tel:+17024601077">(702) 460-1077</a></li>
+            <li><strong>Email:</strong> <a class="text-sky-600" href="mailto:info@modernlendingnv.com">info@modernlendingnv.com</a></li>
+            <li><strong>NMLS:</strong> 1742770 (individual) · 1865339 (Modern Lending Nevada)</li>
+        </ul>
+        <p class="mt-6 text-slate-600">Derek works as a named loan officer — not a national 800-number desk. Appointments are by phone or video. This is not a commitment to lend.</p>
+
+        <form name="consultation" method="POST" data-netlify="true" class="mt-10 space-y-5">
+            <input type="hidden" name="form-name" value="consultation">
+            <div>
+                <label class="block text-sm font-medium text-slate-600 mb-1">Full Name</label>
+                <input type="text" name="name" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">Phone Number</label>
+                    <input type="tel" name="phone" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">Email Address</label>
+                    <input type="email" name="email" required class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-slate-600 mb-1">What are you looking for?</label>
+                <select name="interest" class="w-full border border-slate-300 rounded-2xl px-5 py-3">
+                    <option>Purchasing a home in Nevada</option>
+                    <option>Refinancing my current home</option>
+                    <option>VA Loan options</option>
+                    <option>Just exploring my options</option>
+                </select>
+            </div>
+            <button type="submit" class="w-full bg-slate-900 hover:bg-black text-white font-semibold py-4 rounded-2xl text-lg">Submit Request</button>
+        </form>
+    </section>
+
+<script>
+    fetch('/includes/navbar.html').then(r => r.text()).then(d => document.body.insertAdjacentHTML('afterbegin', d));
+    fetch('/includes/footer.html').then(r => r.text()).then(d => document.body.insertAdjacentHTML('beforeend', d));
+</script>
+</body>
+</html>

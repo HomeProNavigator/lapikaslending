@@ -142,28 +142,32 @@
       "description": "Mortgage refinancing that allows homeowners to access home equity in Nevada",
       "provider": {
         "@type": "MortgageBroker",
-        "name": "Derek Lapikas - Modern Lending Nevada"
+        "@id": "https://nevadahomelender.com/#business",
+        "name": "Derek Lapikas - Modern Lending Nevada",
+        "url": "https://nevadahomelender.com/"
       }
     }
+    </script>
 
-            </footer>
-
-    <!-- Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MortgageBroker",
+      "@id": "https://nevadahomelender.com/#business",
       "name": "Derek Lapikas - Modern Lending Nevada",
-      "url": "https://lapikaslending.netlify.app",
-      "telephone": "(702) 460-1077",
-      "areaServed": ["Las Vegas", "Henderson", "Summerlin", "North Las Vegas"],
-      "description": "Local Nevada mortgage expert helping families buy homes and refinance with personalized guidance."
+      "url": "https://nevadahomelender.com/",
+      "telephone": "+17024601077",
+      "areaServed": ["Las Vegas", "Henderson", "Summerlin", "North Las Vegas"]
     }
-    
     </script>
 
-</body>
-</html>
-    </script>
+<script>
+    fetch('/includes/navbar.html')
+        .then(res => res.text())
+        .then(data => { document.body.insertAdjacentHTML('afterbegin', data); });
+    fetch('/includes/footer.html')
+        .then(res => res.text())
+        .then(data => { document.body.insertAdjacentHTML('beforeend', data); });
+</script>
 </body>
 </html>
