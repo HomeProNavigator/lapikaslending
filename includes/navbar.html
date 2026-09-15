@@ -32,7 +32,7 @@
         </div>
 
         <!-- Mobile Hamburger -->
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
+        <button type="button" id="mobile-menu-btn" class="md:hidden p-2 text-slate-700" aria-label="Open menu" aria-controls="mobile-menu">
             <i class="fa-solid fa-bars text-2xl"></i>
         </button>
     </div>
@@ -56,18 +56,3 @@
         </div>
     </div>
 </nav>
-
-<script>
-    // Mobile Menu Toggle
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    if (menuBtn && mobileMenu) {
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            const icon = menuBtn.querySelector('i');
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-times');
-        });
-    }
-</script>

@@ -20,6 +20,7 @@
   <meta name="twitter:title" content="North Las Vegas Mortgage Lender | Derek Lapikas | Modern Lending" />
   <meta name="twitter:description" content="Expert mortgage guidance in North Las Vegas, Nevada. Derek Lapikas provides local insights and financing solutions for buyers in North Las Vegas." />
   <meta name="twitter:image" content="https://nevadahomelender.com/images/og-cover.jpg" />
+    <script src="/js/nav.js"></script>
 </head>
 <body class="bg-white text-slate-800">
 
@@ -50,7 +51,7 @@
                 </button>
             </div>
 
-            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
+            <button type="button" id="mobile-menu-btn" class="md:hidden p-2 text-slate-700" aria-label="Open menu">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
         </div>
@@ -301,19 +302,7 @@
             modal.classList.remove('flex');
             modal.classList.add('hidden');
         }
-
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        if (menuBtn && mobileMenu) {
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                const icon = menuBtn.querySelector('i');
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-times');
-            });
-        }
-    </script>
+</script>
 
     
     
