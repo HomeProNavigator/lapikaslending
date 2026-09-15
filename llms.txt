@@ -10,6 +10,9 @@
 ## Pages
 
 - [Home](https://nevadahomelender.com/): Nevada mortgage expert
+- [About](https://nevadahomelender.com/about)
+- [Contact](https://nevadahomelender.com/contact)
+- [Privacy notice](https://nevadahomelender.com/privacy)
 - [VA loans](https://nevadahomelender.com/loan-programs/va-loans-nevada)
 - [First-time buyer](https://nevadahomelender.com/loan-programs/first-time-home-buyer-nevada)
 - [Henderson lender](https://nevadahomelender.com/locations/henderson-mortgage-lender)

@@ -89,3 +89,21 @@
   to = "/contact"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/privacy.html"
+  to = "/privacy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/privacy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy-policy/"
+  to = "/privacy"
+  status = 301
+  force = true
