@@ -20,6 +20,7 @@
   <meta name="twitter:title" content="Refinance Calculator | Derek Lapikas | Modern Lending Nevada" />
   <meta name="twitter:description" content="Calculate your potential savings when refinancing your home in Las Vegas or Henderson." />
   <meta name="twitter:image" content="https://nevadahomelender.com/images/og-cover.jpg" />
+    <script src="/js/nav.js"></script>
 </head>
 <body class="bg-white text-slate-800">
 
@@ -54,7 +55,7 @@
             </div>
 
             <!-- Mobile Hamburger -->
-            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
+            <button type="button" id="mobile-menu-btn" class="md:hidden p-2 text-slate-700" aria-label="Open menu">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
         </div>
@@ -242,18 +243,7 @@
         }
 
         // Mobile Menu
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        if (menuBtn && mobileMenu) {
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                const icon = menuBtn.querySelector('i');
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-times');
-            });
-        }
-    </script>
+</script>
     
     <section class="max-w-4xl mx-auto px-6 pb-16">
         <h2 class="text-3xl tracking-tight font-semibold mb-4">Talk through the numbers with Derek</h2>
