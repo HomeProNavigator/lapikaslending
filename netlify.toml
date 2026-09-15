@@ -107,3 +107,27 @@
   to = "/privacy"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/calculator"
+  to = "/calculators"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/calculator/"
+  to = "/calculators"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-calculator"
+  to = "/calculators/mortgage-payment-calculator"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-calculator/"
+  to = "/calculators/mortgage-payment-calculator"
+  status = 301
+  force = true
